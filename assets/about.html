@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>เว็บไซต์ของฉัน - เกี่ยวกับเรา</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="css/navbar.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#1E3A8A",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0F172A",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E293B",
+                        "accent-navy": "#334155",
+                    },
+                    fontFamily: {
+                        display: ["Prompt", "sans-serif"],
+                        body: ["Prompt", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 min-h-screen flex flex-col font-body transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                <div class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">W</div>
+                <a href="index.html" class="font-bold text-xl tracking-tight text-gray-900 dark:text-white">เว็บไซต์ของฉัน</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="nav-link" href="index.html">หน้าแรก</a>
+                <a class="nav-link" href="blog.html">บทความ</a>
+                <a class="nav-link" href="about.html">เกี่ยวกับ</a>
+            </div>
+            <div class="hidden md:flex">
+                <a class="bg-secondary hover:bg-blue-900 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-sm hover:shadow-md" href="newsletter.html">
+                    สมัครรับข่าวสาร
+                </a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="relative bg-accent-navy dark:bg-slate-800 py-16 md:py-20 text-white overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">เกี่ยวกับเรา</h1>
+<p class="text-slate-300 text-lg md:text-xl font-light">ทำความรู้จักกับตัวตนและปรัชญาการทำงานของเรา</p>
+</div>
+</header>
+<main class="flex-grow">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20 pb-16">
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl overflow-hidden mb-12 border border-slate-100 dark:border-slate-700">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/3 bg-slate-50 dark:bg-slate-900/50 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-700">
+<div class="relative w-40 h-40 mb-4">
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-xl transform scale-110"></div>
+<img alt="โปรไฟล์" class="w-40 h-40 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-md relative z-10" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop"/>
+</div>
+<h2 class="text-2xl font-bold text-slate-800 dark:text-white mb-1">ชื่อของคุณ</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400 text-center">บทบาทหรือตำแหน่ง</p>
+<div class="flex space-x-3 mt-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="fab fa-linkedin text-xl"></i></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="fab fa-github text-xl"></i></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="fab fa-twitter text-xl"></i></a>
+</div>
+</div>
+<div class="md:w-2/3 p-8 md:p-10">
+<h3 class="text-xl font-semibold text-primary mb-4">ประสบการณ์และวิสัยทัศน์</h3>
+<div class="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
+<p>
+                                ยินดีต้อนรับสู่เว็บไซต์ของเรา ที่นี่เป็นพื้นที่สำหรับแบ่งปันความรู้ ประสบการณ์ และมุมมองต่างๆ เกี่ยวกับหัวข้อที่เราสนใจ
+                            </p>
+<p>
+                                เราเชื่อในการสร้างคุณค่าผ่านเนื้อหาที่มีประโยชน์ และการเชื่อมโยงความรู้กับผู้คนที่มีความสนใจในสิ่งเดียวกัน
+                            </p>
+<p>
+                                ด้วยประสบการณ์และความหลงใหลในสิ่งที่เราทำ เราหวังว่าจะสามารถสร้างแรงบันดาลใจและเป็นประโยชน์กับคุณได้
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-16">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold text-slate-800 dark:text-white mb-3">ทักษะและความเชี่ยวชาญ</h2>
+<div class="w-16 h-1 bg-primary mx-auto rounded"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<i class="fas fa-chart-pie text-3xl text-primary"></i>
+</div>
+<h3 class="font-semibold text-lg text-slate-800 dark:text-white mb-2">การวิเคราะห์<br/>ข้อมูล</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">การสร้างแบบจำลองเพื่อวัดผลและเพิ่มประสิทธิภาพ</p>
+</div>
+<div class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<i class="fas fa-robot text-3xl text-primary"></i>
+</div>
+<h3 class="font-semibold text-lg text-slate-800 dark:text-white mb-2">เทคโนโลยี</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">การพัฒนาระบบและแก้ปัญหาด้วยเทคโนโลยี</p>
+</div>
+<div class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<i class="fas fa-layer-group text-3xl text-primary"></i>
+</div>
+<h3 class="font-semibold text-lg text-slate-800 dark:text-white mb-2">การออกแบบ</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">การบูรณาการเครื่องมือเพื่อการทำงานที่ไร้รอยต่อ</p>
+</div>
+<div class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<i class="fas fa-magnifying-glass-chart text-3xl text-primary"></i>
+</div>
+<h3 class="font-semibold text-lg text-slate-800 dark:text-white mb-2">การนำเสนอ<br/>ข้อมูล</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">การวิเคราะห์ข้อมูลและการนำเสนอผลลัพธ์ที่เข้าใจง่าย</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-accent-navy to-slate-800 rounded-2xl p-8 md:p-12 text-center text-white relative overflow-hidden shadow-lg">
+<div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-primary opacity-20 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-2xl md:text-3xl font-bold mb-4">พร้อมที่จะเริ่มต้นร่วมงานกันแล้วหรือยัง?</h2>
+<p class="text-slate-300 mb-8 max-w-2xl mx-auto">มาร่วมสร้างสรรค์สิ่งดีๆ ไปด้วยกัน ติดต่อเราเพื่อพูดคุยเกี่ยวกับโปรเจกต์หรือความร่วมมือ</p>
+<a class="inline-block bg-primary hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg shadow-blue-900/50" href="#contact">
+                        ติดต่อปรึกษา
+                     </a>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-accent-navy dark:bg-slate-900 text-white pt-16 pb-8 border-t border-slate-700" id="contact">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+<div>
+<h2 class="text-3xl font-bold mb-6">ติดต่อเรา</h2>
+<p class="text-slate-400 mb-8">กรอกข้อมูลด้านล่างเพื่อส่งข้อความถึงเรา เราจะติดต่อกลับโดยเร็วที่สุด</p>
+<form action="#" class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-slate-300 mb-1" for="name">ชื่อ</label>
+<input class="w-full bg-slate-800/50 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" id="name" placeholder="ชื่อของคุณ" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-300 mb-1" for="email">อีเมล</label>
+<input class="w-full bg-slate-800/50 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" id="email" placeholder="example@email.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-300 mb-1" for="message">ข้อความ</label>
+<textarea class="w-full bg-slate-800/50 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" id="message" placeholder="รายละเอียดที่คุณต้องการปรึกษา..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg" type="submit">
+                            ส่งข้อความ
+                        </button>
+</form>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold mb-6 text-slate-200">ข้อมูลการติดต่อ</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-primary">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<p class="text-sm text-slate-400">อีเมล</p>
+<a class="text-white hover:text-primary transition-colors" href="mailto:hello@example.com">hello@example.com</a>
+</div>
+</div>
+<div class="mt-8">
+<p class="text-sm text-slate-400 mb-3">ติดตามผลงานได้ที่</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white transition-all" href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white transition-all" href="#">
+<i class="fab fa-github"></i>
+</a>
+<a class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white transition-all" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-800">
+<h4 class="text-sm font-semibold text-slate-300 mb-2">พร้อมให้บริการ:</h4>
+<p class="text-slate-400 text-sm">ที่ปรึกษา, วิทยากร, ความร่วมมือทางธุรกิจ</p>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+<p>© 2024 เว็บไซต์ของฉัน สงวนลิขสิทธิ์</p>
+<div class="flex space-x-6">
+<a class="hover:text-slate-300 transition-colors" href="#">นโยบายความเป็นส่วนตัว</a>
+<a class="hover:text-slate-300 transition-colors" href="#">เงื่อนไขการใช้งาน</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="js/navbar.js"></script>
+</body></html>

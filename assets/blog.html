@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>บล็อก - เว็บไซต์ของฉัน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <link href="css/blog.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="js/tailwind-config.js"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">W</div>
+                    <a href="index.html" class="font-bold text-xl tracking-tight text-gray-900">เว็บไซต์ของฉัน</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="nav-link" href="index.html">หน้าแรก</a>
+                    <a class="nav-link" href="blog.html">บทความ</a>
+                    <a class="nav-link" href="about.html">เกี่ยวกับ</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a class="bg-secondary hover:bg-blue-900 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-sm hover:shadow-md" href="newsletter.html">
+                        สมัครรับข่าวสาร
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <span class="material-icons-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <header class="mb-10">
+            <h1 class="text-4xl font-bold text-gray-900 tracking-tight">บล็อก</h1>
+            <p class="mt-2 text-gray-600 text-lg">บทความ ความรู้ และเรื่องราวที่น่าสนใจ</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
+            <div class="lg:col-span-8 xl:col-span-9">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <!-- บทความที่ 1 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-600">
+                                    เทคโนโลยี
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                พื้นฐานการสร้างเว็บไซต์สำหรับมือใหม่
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                เรียนรู้วิธีการเริ่มต้นสร้างเว็บไซต์ด้วยตนเองโดยใช้เครื่องมือและเทคนิคที่ทันสมัย เหมาะสำหรับผู้เริ่มต้น
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>15 ธ.ค. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 5 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- บทความที่ 2 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-purple-50 text-purple-600">
+                                    การออกแบบ
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                หลักการออกแบบ UI/UX ที่ควรรู้
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                ทำความเข้าใจหลักการออกแบบที่ทำให้ผู้ใช้มีประสบการณ์ที่ดี และเพิ่มประสิทธิภาพการใช้งาน
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>10 ธ.ค. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 4 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- บทความที่ 3 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-teal-50 text-teal-600">
+                                    ไอเดีย
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                เทรนด์เทคโนโลยีที่น่าจับตามอง
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                สำรวจเทรนด์เทคโนโลยีล่าสุดที่กำลังเปลี่ยนแปลงโลก และเตรียมตัวให้พร้อมสำหรับอนาคต
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>5 ธ.ค. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 6 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- บทความที่ 4 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-600">
+                                    การพัฒนา
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                เริ่มต้นเขียนโค้ดสำหรับมือใหม่
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                พื้นฐานการเขียนโปรแกรมที่จำเป็นสำหรับการเริ่มต้น พร้อมเทคนิคและแนวทางปฏิบัติที่ดี
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>1 ธ.ค. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 7 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- บทความที่ 5 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-orange-50 text-orange-600">
+                                    การวิเคราะห์
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                เข้าใจข้อมูลด้วยการวิเคราะห์
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                วิธีการวิเคราะห์ข้อมูลอย่างมีประสิทธิภาพ และนำไปใช้ในการตัดสินใจที่ดีขึ้น
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>28 พ.ย. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 5 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- บทความที่ 6 -->
+                    <article class="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <img alt="บทความตัวอย่าง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"/>
+                        </div>
+                        <div class="flex-1 p-5 flex flex-col">
+                            <div class="mb-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-pink-50 text-pink-600">
+                                    ไอเดีย
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-primary transition-colors">
+                                แนวคิดสร้างสรรค์สำหรับโปรเจกต์
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
+                                ไอเดียและแนวทางใหม่ๆ ที่จะช่วยให้โปรเจกต์ของคุณโดดเด่นและประสบความสำเร็จ
+                            </p>
+                            <div class="flex items-center text-xs text-gray-400 mt-auto">
+                                <span>25 พ.ย. 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>อ่าน 4 นาที</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="mt-10">
+                    <button class="w-full py-3 px-4 bg-white border border-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition shadow-sm text-sm">
+                        โหลดเพิ่มเติม
+                    </button>
+                </div>
+            </div>
+
+            <aside class="lg:col-span-4 xl:col-span-3 space-y-10">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">บทความแนะนำ</h3>
+                    <ul class="space-y-4">
+                        <li class="group">
+                            <a class="block" href="#">
+                                <h4 class="text-sm font-medium text-gray-900 group-hover:text-primary transition-colors leading-relaxed">
+                                    พื้นฐานการสร้างเว็บไซต์สำหรับมือใหม่
+                                </h4>
+                                <span class="text-xs text-gray-500 mt-1 block">เทคโนโลยี</span>
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a class="block" href="#">
+                                <h4 class="text-sm font-medium text-gray-900 group-hover:text-primary transition-colors leading-relaxed">
+                                    หลักการออกแบบ UI/UX ที่ควรรู้
+                                </h4>
+                                <span class="text-xs text-gray-500 mt-1 block">การออกแบบ</span>
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a class="block" href="#">
+                                <h4 class="text-sm font-medium text-gray-900 group-hover:text-primary transition-colors leading-relaxed">
+                                    เทรนด์เทคโนโลยีที่น่าจับตามอง
+                                </h4>
+                                <span class="text-xs text-gray-500 mt-1 block">ไอเดีย</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">หมวดหมู่</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="flex items-center justify-between text-sm text-gray-600 hover:text-primary transition-colors py-1" href="#">
+                                <span>ทั้งหมด</span>
+                                <span class="bg-gray-100 text-xs px-2 py-0.5 rounded-full text-gray-500">24</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center justify-between text-sm text-gray-600 hover:text-primary transition-colors py-1" href="#">
+                                <span>เทคโนโลยี</span>
+                                <span class="bg-gray-100 text-xs px-2 py-0.5 rounded-full text-gray-500">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center justify-between text-sm text-gray-600 hover:text-primary transition-colors py-1" href="#">
+                                <span>การออกแบบ</span>
+                                <span class="bg-gray-100 text-xs px-2 py-0.5 rounded-full text-gray-500">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center justify-between text-sm text-gray-600 hover:text-primary transition-colors py-1" href="#">
+                                <span>ไอเดีย</span>
+                                <span class="bg-gray-100 text-xs px-2 py-0.5 rounded-full text-gray-500">6</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center justify-between text-sm text-gray-600 hover:text-primary transition-colors py-1" href="#">
+                                <span>การพัฒนา</span>
+                                <span class="bg-gray-100 text-xs px-2 py-0.5 rounded-full text-gray-500">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">สมัครรับข่าวสาร</h3>
+                    <p class="text-sm text-gray-600 mb-4">สมัครรับบทความใหม่ๆ ส่งตรงถึงอีเมลของคุณ</p>
+                    <form class="space-y-3">
+                        <div>
+                            <input class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="อีเมลของคุณ" type="email"/>
+                        </div>
+                        <button class="w-full py-2 px-4 bg-primary hover:bg-blue-600 text-white text-sm font-medium rounded-lg shadow-sm transition-colors" type="button">
+                            สมัครสมาชิก
+                        </button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-2 text-sm text-gray-600">
+                <span class="font-semibold text-gray-900">© เว็บไซต์ของฉัน</span>
+                <span>•</span>
+                <span>สงวนลิขสิทธิ์</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
