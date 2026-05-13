@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Dashboard คืออะไร และต่างจาก Report อย่างไร? | การทำ Dashboard</title>
+    <meta name="description" content="เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์ พร้อมตัวอย่างจากชีวิตจริง"/>
+    <link rel="canonical" href="https://naponsatha.github.io/np-web/assets/dashboard-vs-report.html"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://naponsatha.github.io/np-web/assets/dashboard-vs-report.html"/>
+    <meta property="og:title" content="Dashboard คืออะไร และต่างจาก Report อย่างไร?"/>
+    <meta property="og:description" content="เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์"/>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Dashboard คืออะไร และต่างจาก Report อย่างไร? สิ่งที่หลายคนเข้าใจผิด",
+      "description": "เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+      "datePublished": "2025-05-13",
+      "dateModified": "2025-05-13",
+      "inLanguage": "th",
+      "publisher": {
+        "@type": "Person",
+        "name": "Napon Satha"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://naponsatha.github.io/np-web/assets/dashboard-vs-report.html"
+      }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <style>
+        body { font-family: 'Prompt', sans-serif; }
+        .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #111827; }
+        .prose h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.85; color: #374151; }
+        .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose ul li { margin-bottom: 0.5rem; color: #374151; list-style-type: disc; }
+        .prose strong { color: #111827; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">W</div>
+                    <a href="../index.html" class="font-bold text-xl tracking-tight text-gray-900">เว็บไซต์ของฉัน</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="nav-link" href="../index.html">หน้าแรก</a>
+                    <a class="nav-link" href="blog.html">บทความ</a>
+                    <a class="nav-link" href="about.html">เกี่ยวกับ</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a class="bg-secondary hover:bg-blue-900 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-sm" href="newsletter.html">
+                        สมัครรับข่าวสาร
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <span class="material-icons-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-gray-400 mb-8 flex items-center gap-2">
+            <a href="../index.html" class="hover:text-primary transition">หน้าแรก</a>
+            <span class="material-icons-outlined text-sm">chevron_right</span>
+            <a href="blog.html" class="hover:text-primary transition">บทความ</a>
+            <span class="material-icons-outlined text-sm">chevron_right</span>
+            <span class="text-gray-600">Dashboard vs Report</span>
+        </nav>
+
+        <!-- Header -->
+        <header class="mb-8">
+            <span class="inline-block bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">Dashboard</span>
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                Dashboard คืออะไร และต่างจาก Report อย่างไร? สิ่งที่หลายคนเข้าใจผิด
+            </h1>
+            <div class="flex items-center gap-3 text-sm text-gray-400">
+                <span class="material-icons-outlined text-sm">calendar_today</span>
+                <span>13 พฤษภาคม 2568</span>
+                <span>•</span>
+                <span>อ่าน 5 นาที</span>
+            </div>
+        </header>
+
+        <!-- Cover Image -->
+        <figure class="mb-10 rounded-2xl overflow-hidden shadow-md">
+            <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=500&fit=crop"
+                alt="การทำ Dashboard สำหรับ Monitor KPI ในองค์กร"
+                class="w-full h-auto object-cover"
+            />
+        </figure>
+
+        <!-- Content -->
+        <article class="prose">
+
+            <p>
+                เมื่อไม่นานมานี้ได้ดูซีรีส์ <strong>สาธุ 2</strong> บน Netflix แล้วเห็น Dashboard ที่ตัวเอกใช้ติดตามยอดบริจาควัดเป้าหมาย 1,000 ล้านบาท ทั้งในช่วงที่ยอดยังไปไม่ถึงไหน และช่วงที่ใกล้จะถึงเป้า
+            </p>
+
+            <p>
+                Dashboard ตัวนั้นมีบทบาทสำคัญในการ Monitor ความคืบหน้า ทำให้นึกถึงเรื่องที่หลายองค์กรยังเข้าใจผิดเกี่ยวกับหน้าที่ของ <strong>การทำ Dashboard</strong> วันนี้เลยอยากมาแชร์ให้ชัดขึ้น
+            </p>
+
+            <h2>Dashboard บูมขึ้นมาพร้อมกระแส Data</h2>
+
+            <p>
+                ในช่วง 2-3 ปีที่ผ่านมา กระแส Data บูมขึ้นอย่างเห็นได้ชัด ทุกบริษัทอยากเก็บ Data และผู้บริหารมักต้องการเห็น Dashboard เท่ๆ สักอันไว้ดูตัวเลข
+            </p>
+
+            <p>
+                แต่จากประสบการณ์จริง <strong>ผู้บริหารส่วนใหญ่ไม่ค่อยมีเวลาดู Dashboard</strong> เหมือนกับในซีรีส์ที่ผู้บริหารมักติดประชุมจนพลาดตัวเลขสำคัญในบางครั้ง
+            </p>
+
+            <p>
+                คนที่ควรจะดู Dashboard จริงๆ คือ <strong>Manager หรือหัวหน้าที่คอยบริหารตัวเลขสำคัญ</strong> ในหน่วยงานนั้นๆ มากกว่า
+            </p>
+
+            <h2>หน้าที่แท้จริงของ Dashboard คืออะไร</h2>
+
+            <p>
+                <strong>Dashboard มีหน้าที่หลักคือ Monitor KPI สำคัญ</strong> ที่อาจส่งผลกับองค์กร เช่น ยอดขาย ค่าโฆษณา หรือ KPI ที่เกี่ยวข้องกับหน่วยงานนั้นๆ เพื่อให้เห็นว่ามีความผิดปกติเกิดขึ้นหรือไม่
+            </p>
+
+            <ul>
+                <li>ถ้าพบความผิดปกติ — ลงไปแก้ไขปัญหาได้ทันที</li>
+                <li>ถ้ายอดสูงผิดปกติ — นำมาวิเคราะห์เป็น Report รายงานต่อผู้บริหาร</li>
+            </ul>
+
+            <h2>ความเข้าใจผิดที่พบบ่อย: Dashboard ไม่ได้มีไว้ให้ดูเท่</h2>
+
+            <p>
+                หลายคนเข้าใจผิดจึงมักนำ Data เข้าไปยัดอยู่ในหน้าเดียว ทำให้ดูมีตัวเลขเยอะ กราฟเยอะ ดูเท่ แต่กลับ<strong>ดูไม่รู้เรื่อง</strong> คนเปิดมาดูก็ไม่เข้าใจว่าจะต้องดูตรงไหน
+            </p>
+
+            <p>
+                <strong>Dashboard ที่ดีควรมีเฉพาะ KPI ที่สำคัญ</strong> และกราฟที่มองเห็นสิ่งผิดปกติได้ทันที เมื่อเจอค่าผิดปกติ ไม่ว่าจะต่ำหรือสูงกว่าปกติ ค่อยนำ Data ส่วนนั้นมาวิเคราะห์ให้ลึกลงแล้วนำเสนอผู้บริหารในรูปแบบ Report
+            </p>
+
+            <h2>ตัวอย่างจริง: ยอดชานมตกจาก 10,000 เหลือ 3,000 บาท</h2>
+
+            <p>
+                สมมติคุณทำธุรกิจเครื่องดื่มที่มีทั้งกาแฟ ชานม ชาเขียว น้ำหวาน วันหนึ่งคุณนั่งดู Dashboard แล้วพบว่าสาขาหนึ่งปกติขายชานมได้อาทิตย์ละ 10,000 บาท แต่อยู่ๆ ยอดตกเหลือแค่ 3,000 บาท
+            </p>
+
+            <p>
+                เมื่อดู Data แล้วพบว่าตกลงเฉพาะหมวดชานม แต่ยังไม่รู้สาเหตุ คุณจึงขับรถไปที่สาขานั้นแล้วสอบถามพนักงาน จึงพบว่า<strong>มีคู่แข่งใหม่เข้ามาในตลาด</strong>เป็นร้านชานมที่อัดโปรโมชั่นเพื่อดึงลูกค้า
+            </p>
+
+            <p>
+                เมื่อพบสาเหตุ คุณจึงทำ Report แจ้งผู้บริหารและทำ Forecast เพื่อออกโปรโมชั่นแก้สถานการณ์ นี่คือความแตกต่างของ <strong>Dashboard (Monitor)</strong> และ <strong>Report (Analyze)</strong>
+            </p>
+
+            <h2>เครื่องมือที่ใช้ทำ Dashboard ไม่จำเป็นต้องซับซ้อน</h2>
+
+            <p>
+                ในองค์กรที่ไม่ได้มี Database ขนาดใหญ่จนต้องใช้ SQL หรือ Python คุณก็สามารถใช้เครื่องมืออย่าง <strong>Excel หรือ Looker Studio</strong> ในการทำงานกับ Data ได้เลย
+            </p>
+
+            <p>
+                แต่หากต้องการ Dashboard แบบ Real-time หรือป้องกันความผิดพลาดในการกรอก Data ระบบในการกรอก Data หรือทักษะการเขียนโค้ดก็จะเป็นสิ่งที่ควรนำมาใช้เพิ่มเติม
+            </p>
+
+            <h2>สรุป: Dashboard vs Report ต่างกันอย่างไร</h2>
+
+            <ul>
+                <li><strong>Dashboard</strong> — มีไว้ Monitor ตัวเลขสำคัญ เพื่อเห็นความผิดปกติได้ทันที</li>
+                <li><strong>Report</strong> — มีไว้ Analyze ข้อมูลเชิงลึก เพื่อหาสาเหตุและนำเสนอผู้บริหาร</li>
+            </ul>
+
+            <p>
+                Dashboard ไม่ได้ออกแบบมาเพื่อให้ดูเท่ แต่ออกแบบมาเพื่อให้เห็นปัญหาและแก้ไขได้ทันท่วงที
+            </p>
+
+            <p>
+                หากมีความคิดเห็นหรือมุมมองอื่นเกี่ยวกับเรื่องนี้ แชร์กันในคอมเมนต์ได้เลยครับ
+            </p>
+
+        </article>
+
+        <!-- Tags -->
+        <div class="mt-10 flex flex-wrap gap-2">
+            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">การทำ dashboard</span>
+            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Dashboard คืออะไร</span>
+            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Data Visualization</span>
+            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">KPI Monitoring</span>
+            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Looker Studio</span>
+        </div>
+
+        <!-- Back to blog -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <a href="blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-blue-700 transition">
+                <span class="material-icons-outlined text-sm">arrow_back</span>
+                กลับไปหน้าบทความทั้งหมด
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-2 text-sm text-gray-600">
+                <span class="font-semibold text-gray-900">© เว็บไซต์ของฉัน</span>
+                <span>•</span>
+                <span>สงวนลิขสิทธิ์</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
