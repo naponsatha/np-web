@@ -1,5 +1,31 @@
-<!DOCTYPE html>
-<html lang="th"><head>
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>napons. — ช่วย Founder ตัดสินใจทิศทางธุรกิจด้วย Data & Strategy</title>
+<meta name="description" content="Strategy Analyst ที่ช่วย Founder เปลี่ยน Data และ Strategy ให้กลายเป็นการตัดสินใจที่ถูกต้อง ก่อนลงแรง ลงเงิน และลงมือผิดทาง"/>
+<link rel="canonical" href="https://napons.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://napons.com/"/>
+<meta property="og:title" content="napons. — ช่วย Founder ตัดสินใจทิศทางธุรกิจด้วย Data & Strategy"/>
+<meta property="og:description" content="Strategy Analyst ที่ช่วย Founder เปลี่ยน Data และ Strategy ให้กลายเป็นการตัดสินใจที่ถูกต้อง"/>
+<meta property="og:image" content="https://napons.com/portrait.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="napons. — ช่วย Founder ตัดสินใจทิศทางธุรกิจ"/>
+<meta name="twitter:description" content="Strategy Analyst ที่ช่วย Founder เปลี่ยน Data และ Strategy ให้กลายเป็นการตัดสินใจที่ถูกต้อง"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Napons",
+  "url": "https://napons.com",
+  "jobTitle": "Strategy Analyst",
+  "description": "ช่วย Founder ตัดสินใจทิศทางธุรกิจด้วย Data, Strategy และ Decision Frameworks",
+  "address": {"@type": "PostalAddress", "addressLocality": "Bangkok", "addressCountry": "TH"},
+  "sameAs": ["https://napons.com"]
+}
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -7,338 +33,1152 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N7RW4TRZ');</script>
 <!-- End Google Tag Manager -->
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>การทำ Dashboard สำหรับมือใหม่ | แหล่งรวมความรู้ Data & Tech</title>
-<meta name="description" content="เรียนรู้การทำ Dashboard ตั้งแต่เริ่มต้น พร้อมเทคนิค Data Visualization, เครื่องมือยอดนิยม และตัวอย่างจริงที่นำไปใช้ได้เลย"/>
-<meta name="keywords" content="การทำ dashboard, dashboard คืออะไร, สร้าง dashboard, data visualization, dashboard มือใหม่"/>
-<link rel="canonical" href="https://napons.com/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://napons.com/"/>
-<meta property="og:title" content="การทำ Dashboard สำหรับมือใหม่ | แหล่งรวมความรู้ Data & Tech"/>
-<meta property="og:description" content="เรียนรู้การทำ Dashboard ตั้งแต่เริ่มต้น พร้อมเทคนิค Data Visualization, เครื่องมือยอดนิยม และตัวอย่างจริงที่นำไปใช้ได้เลย"/>
-<meta property="og:image" content="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=630&fit=crop"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="การทำ Dashboard สำหรับมือใหม่ | แหล่งรวมความรู้ Data & Tech"/>
-<meta name="twitter:description" content="เรียนรู้การทำ Dashboard ตั้งแต่เริ่มต้น พร้อมเทคนิค Data Visualization และตัวอย่างจริง"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "แหล่งรวมความรู้ Data & Tech",
-  "url": "https://napons.com/",
-  "description": "เรียนรู้การทำ Dashboard, Data Visualization และเทคโนโลยีสำหรับมือใหม่",
-  "inLanguage": "th",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://napons.com/assets/blog.html?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-<link href="css/navbar.css" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#3B82F6",
-                        secondary: "#1E3A8A",
-                        "background-light": "#F9FAFB",
-                        "background-dark": "#0F172A",
-                        "surface-light": "#FFFFFF",
-                        "surface-dark": "#1E293B",
-                    },
-                    fontFamily: {
-                        display: ["Prompt", "sans-serif"],
-                        body: ["Prompt", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.5rem",
-                        'xl': "1rem",
-                        '2xl': "1.5rem",
-                    },
-                },
-            },
-        };
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 <style>
-        body {
-            font-family: 'Prompt', sans-serif;
-        }
-    </style>
+  /* Page-specific styles */
+  .hero {
+    padding-top: calc(120px * var(--density));
+    padding-bottom: calc(160px * var(--density));
+    position: relative;
+    overflow: hidden;
+    background: #0d0d0f;
+  }
+  .hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7) contrast(1.1) saturate(0.7);
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(110% 75% at 22% 55%, rgba(13,13,15,0.15) 0%, rgba(13,13,15,0.45) 60%, rgba(13,13,15,0.7) 100%),
+      linear-gradient(180deg, rgba(13,13,15,0.45) 0%, rgba(13,13,15,0.2) 35%, rgba(13,13,15,0.55) 100%);
+  }
+  .hero > .wrap {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-eyebrow-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 80px;
+  }
+  .hero h1 {
+    font-size: clamp(56px, 9.2vw, 156px);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+    margin-bottom: 56px;
+  }
+  .hero h1 .accent { color: var(--accent); font-style: italic; font-weight: 500; }
+  .hero-sub-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 96px;
+    margin-top: 64px;
+    padding-top: 56px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero-ctas { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+  .hero-meta {
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-meta span:first-child { color: var(--ink); }
+
+  /* Problem section */
+  .problem {
+    background: var(--bg-warm);
+    padding: calc(160px * var(--density)) 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .problem-quote {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5.2vw, 80px);
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    max-width: 1100px;
+    text-wrap: balance;
+  }
+  .problem-quote .strike {
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 3px;
+    color: var(--muted);
+  }
+  .problem-quote .underline {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  /* CTA banner variant — taller, generous */
+  .section-banner.cta-banner {
+    padding: calc(160px * var(--density)) 0 calc(160px * var(--density));
+    margin-bottom: 0;
+  }
+  .section-banner.cta-banner .section-bg::after {
+    background:
+      radial-gradient(120% 80% at 20% 50%, rgba(13,13,15,0.15) 0%, rgba(13,13,15,0.55) 55%, rgba(13,13,15,0.82) 100%),
+      linear-gradient(180deg, rgba(13,13,15,0.55) 0%, rgba(13,13,15,0.3) 50%, rgba(13,13,15,0.72) 100%);
+  }
+  .cta-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 96px;
+    align-items: end;
+  }
+  .cta-grid h2 {
+    font-size: clamp(40px, 5.2vw, 84px);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin-top: 24px;
+  }
+  .cta-grid h2 em { color: var(--accent); font-style: italic; }
+  .cta-grid .cta-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .cta-grid .cta-right p {
+    font-family: var(--display);
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    letter-spacing: -0.005em;
+    max-width: 36ch;
+  }
+  .cta-grid .cta-meta {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(244,242,236,0.18);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(244,242,236,0.55);
+  }
+
+  @media (max-width: 900px) {
+    .cta-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .section-banner {
+    position: relative;
+    overflow: hidden;
+    padding: calc(96px * var(--density)) 0 calc(96px * var(--density));
+    margin-bottom: 96px;
+  }
+  .section-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .section-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.62) contrast(1.12) saturate(0.6);
+  }
+  .section-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(120% 80% at 75% 50%, rgba(13,13,15,0.1) 0%, rgba(13,13,15,0.45) 55%, rgba(13,13,15,0.78) 100%),
+      linear-gradient(180deg, rgba(13,13,15,0.45) 0%, rgba(13,13,15,0.2) 50%, rgba(13,13,15,0.65) 100%);
+  }
+  .section-banner > .wrap {
+    position: relative;
+    z-index: 1;
+  }
+  /* Framework section */
+  .framework-header {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 96px;
+    align-items: end;
+    margin-bottom: 0;
+  }
+  .framework-diagram {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 64px;
+  }
+  .framework-step {
+    border-left: 1px solid var(--rule);
+    padding: 32px 28px 40px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  .framework-step:last-child { border-right: 1px solid var(--rule); }
+  .framework-step .step-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .framework-step .step-num .n {
+    color: var(--accent);
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  .framework-step h4 {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .framework-step p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    margin-top: auto;
+  }
+  .framework-step .dot-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+  .framework-step .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--rule);
+  }
+  .framework-step .dot.on { background: var(--accent); }
+
+  /* Flow line */
+  .framework-flow {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .framework-flow .line { height: 1px; background: var(--rule); }
+
+  /* What I sell — comparison */
+  .sell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 96px;
+  }
+  .sell-col h3 {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sell-col.not h3 { color: var(--muted); }
+  .sell-col.yes h3 { color: var(--accent); }
+  .sell-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .sell-list li {
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .sell-col.not .sell-list li {
+    color: var(--muted);
+    text-decoration: line-through;
+    text-decoration-color: var(--warm-gray);
+    text-decoration-thickness: 1px;
+  }
+  .sell-col.yes .sell-list li.big {
+    font-size: 56px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .sell-col.yes .sell-list li.big em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+  .sell-col.yes .sell-list li {
+    color: var(--ink-2);
+    font-size: 22px;
+  }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: 1px solid var(--ink);
+  }
+  .service {
+    padding: 56px 48px 56px 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 32px;
+    align-items: start;
+  }
+  .service:nth-child(odd) { padding-right: 48px; border-right: 1px solid var(--rule); padding-left: 0; }
+  .service:nth-child(even) { padding-left: 48px; }
+  .service .s-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.14em;
+    padding-top: 8px;
+  }
+  .service h4 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+  .service p {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    max-width: 42ch;
+  }
+  .service .s-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    padding: 6px 12px;
+    border: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  /* Articles preview */
+  .articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+    border-top: 1px solid var(--ink);
+    padding-top: 48px;
+  }
+  .article-card {
+    padding: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--ink);
+    position: relative;
+  }
+  .article-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -24px;
+    width: 1px;
+    background: var(--rule);
+  }
+  .article-card .a-thumb {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    margin-bottom: 8px;
+  }
+  .article-card .a-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7) contrast(1.1) saturate(0.6);
+    transition: filter 0.3s ease, transform 0.5s ease;
+  }
+  .article-card:hover .a-thumb img {
+    filter: brightness(0.95) contrast(1.05) saturate(0.85);
+    transform: scale(1.03);
+  }
+  .article-card:last-child { border-right: none; padding-right: 0; }
+  .article-card .a-meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .article-card .a-meta .cat { color: var(--accent); }
+  .article-card h4 {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  .article-card p {
+    font-size: 14px;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+  .article-card .a-read {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: auto;
+    padding-top: 16px;
+    color: var(--ink);
+  }
+
+  /* Lead magnets — cream (inverse) for rhythm */
+  .magnets {
+    background: var(--inv-bg);
+    color: var(--inv-ink);
+    padding: calc(140px * var(--density)) 0;
+  }
+  .magnets h2 { color: var(--inv-ink); }
+  .magnets .eyebrow { color: var(--accent); }
+  .magnets .lead { color: var(--inv-ink-2); }
+  .magnets-list {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--inv-rule);
+  }
+  .magnet {
+    padding: 40px 32px 40px 0;
+    border-bottom: 1px solid var(--inv-rule);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+  }
+  .magnet:nth-child(odd) { padding-right: 32px; border-right: 1px solid var(--inv-rule); }
+  .magnet:nth-child(even) { padding-left: 32px; }
+  .magnet h4 {
+    font-family: var(--display);
+    color: var(--inv-ink);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .magnet .m-type {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--inv-muted);
+  }
+  .magnet .m-icon {
+    width: 56px;
+    height: 70px;
+    border: 1px solid var(--inv-rule);
+    position: relative;
+    flex-shrink: 0;
+    background: rgba(0,0,0,0.02);
+  }
+  .magnet .m-icon::before {
+    content: '';
+    position: absolute;
+    top: 12px; left: 10px; right: 10px;
+    height: 1px;
+    background: var(--inv-rule);
+    box-shadow: 0 8px 0 var(--inv-rule), 0 16px 0 var(--inv-rule), 0 24px 0 var(--inv-rule), 0 32px 0 var(--inv-rule);
+  }
+  .magnet .m-icon::after {
+    content: 'PDF';
+    position: absolute;
+    bottom: 8px; left: 0; right: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+  }
+
+  /* About */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 96px;
+    align-items: start;
+  }
+  .about-photo {
+    aspect-ratio: 1/1;
+    background: var(--bg-warm);
+    border: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+  }
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    display: block;
+    filter: brightness(0.92) contrast(1.05) saturate(0.9);
+  }
+  .about-photo .ph-cap {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: rgba(13,13,15,0.75);
+    backdrop-filter: blur(8px);
+    padding: 6px 10px;
+    border: 1px solid rgba(244,242,236,0.18);
+  }
+  .about-body p {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: 20px;
+    max-width: 56ch;
+  }
+  .about-body p.smaller {
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+  .about-stats {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+  .about-stats .stat-num {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .about-stats .stat-num .unit { font-size: 24px; color: var(--accent); }
+  .about-stats .stat-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* Promise — pull row */
+  .promise {
+    padding: calc(72px * var(--density)) 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .promise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+  }
+  .promise-item {
+    padding-top: 32px;
+    border-top: 1px solid var(--ink);
+  }
+  .promise-item .p-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .promise-item h3 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 2.4vw, 38px);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .promise-item h3 em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  /* Section header pattern */
+  .sec-header {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 96px;
+    margin-bottom: 80px;
+    align-items: end;
+  }
+  .sec-header .eyebrow { display: block; margin-bottom: 24px; }
+  .sec-header h2 { margin-bottom: 0; }
+  .sec-header .sec-intro {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--ink-2);
+    line-height: 1.45;
+    max-width: 52ch;
+  }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    :root { --gutter: 24px; }
+    .hero-eyebrow-row { padding-bottom: 40px; margin-bottom: 40px; flex-direction: column; gap: 16px; align-items: flex-start; }
+    .hero-sub-row { grid-template-columns: 1fr; gap: 32px; }
+    .framework-header { grid-template-columns: 1fr; gap: 32px; }
+    .framework-diagram { grid-template-columns: 1fr; }
+    .framework-step { border-left: none; border-top: 1px solid var(--rule); min-height: auto; }
+    .framework-step:last-child { border-right: none; }
+    .sell { grid-template-columns: 1fr; gap: 48px; }
+    .sell-col.yes .sell-list li.big { font-size: 36px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service:nth-child(odd) { padding-right: 0; border-right: none; }
+    .service:nth-child(even) { padding-left: 0; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .article-card { border-right: none; border-bottom: 1px solid var(--rule); padding: 32px 0; }
+    .article-card:not(:first-child) { padding-left: 0; }
+    .magnets-list { grid-template-columns: 1fr; }
+    .magnet:nth-child(odd) { padding-right: 0; border-right: none; }
+    .magnet:nth-child(even) { padding-left: 0; }
+    .about { grid-template-columns: 1fr; gap: 48px; }
+    .promise-grid { grid-template-columns: 1fr; gap: 40px; }
+    .sec-header { grid-template-columns: 1fr; gap: 24px; }
+    .nav-links { gap: 16px; }
+    .nav-links a:not(.nav-cta) { display: none; }
+  }
+</style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 transition-colors duration-300">
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7RW4TRZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                <div class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">W</div>
-                <a href="index.html" class="font-bold text-xl tracking-tight text-gray-900 dark:text-white">เว็บไซต์ของฉัน</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a class="nav-link" href="index.html">หน้าแรก</a>
-                <a class="nav-link" href="assets/blog.html">บทความ</a>
-                <a class="nav-link" href="assets/about.html">เกี่ยวกับ</a>
-            </div>
-            <div class="hidden md:flex">
-                <a class="bg-secondary hover:bg-blue-900 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-sm hover:shadow-md" href="assets/newsletter.html">
-                    สมัครรับข่าวสาร
-                </a>
-            </div>
-            <div class="md:hidden flex items-center">
-                <button class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none">
-                    <span class="material-icons-outlined">menu</span>
-                </button>
-            </div>
-        </div>
+
+<!-- ============== NAV ============== -->
+<nav class="nav" data-screen-label="01 Nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">napons<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="#services">Services</a>
+      <a href="contact.html" class="nav-cta">Book a Call</a>
     </div>
+  </div>
 </nav>
-<section class="relative bg-secondary dark:bg-slate-900 overflow-hidden">
-<div class="absolute inset-0 opacity-10 pointer-events-none">
-<svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-<path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"></path>
-</svg>
-</div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                        การทำ Dashboard สำหรับมือใหม่: <br/>
-<span class="text-blue-300">เรียนรู้ Data & Tech ได้ทุกวัน</span>
-</h1>
-<p class="text-lg text-blue-100 max-w-xl font-light leading-relaxed">
-                        แหล่งรวมความรู้เรื่องการทำ Dashboard, Data Visualization และเทคโนโลยี พร้อมตัวอย่างจริงที่นำไปใช้ได้เลย
-                    </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<a class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-500/30 flex items-center gap-2" href="assets/blog.html">
-                            อ่านบทความ
-                            <span class="material-icons-outlined text-sm">arrow_forward</span>
-</a>
-<a class="border border-blue-400 text-blue-100 hover:bg-blue-800 hover:text-white px-8 py-3 rounded-lg font-medium transition" href="assets/about.html">
-                            เกี่ยวกับเรา
-                        </a>
-</div>
-</div>
-<div class="relative mt-8 lg:mt-0">
-<div class="bg-gradient-to-tr from-blue-600/20 to-cyan-400/20 rounded-2xl p-4 backdrop-blur-sm border border-white/10 shadow-2xl transform rotate-1 hover:rotate-0 transition duration-500">
-<img alt="เว็บไซต์ของฉัน - แสดงภาพหน้าจอตัวอย่าง" class="rounded-xl shadow-inner w-full h-auto object-cover opacity-90 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop"/>
-<div class="absolute -top-6 -right-6 bg-surface-dark p-4 rounded-xl shadow-xl border border-gray-700 animate-bounce delay-700 hidden lg:block">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
-<span class="material-icons-outlined">trending_up</span>
-</div>
-<div>
-<div class="text-xs text-gray-400">ความนิยม</div>
-<div class="text-lg font-bold text-white">+95%</div>
-</div>
-</div>
-</div>
-<div class="absolute -bottom-8 -left-4 bg-surface-dark p-4 rounded-xl shadow-xl border border-gray-700 hidden lg:block">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
-<span class="material-icons-outlined">article</span>
-</div>
-<div>
-<div class="text-xs text-gray-400">บทความ</div>
-<div class="text-lg font-bold text-white">50+</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ============== HERO ============== -->
+<section class="hero" data-screen-label="02 Hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=2400&amp;q=85&amp;fm=jpg" alt="" loading="eager" onerror="this.style.display='none'" />
+  </div>
+  <div class="wrap">
+    <div class="hero-eyebrow-row">
+      <span class="eyebrow">Strategy Analyst · Business Direction</span>
+      <span class="eyebrow muted">Index — 01 / Home</span>
+    </div>
+
+    <h1>
+      ตัดสินใจ<br />
+      ทิศทางธุรกิจ<br />
+      ให้<span class="accent">ชัด</span> ก่อนลงมือ
+    </h1>
+    <div class="hero-sub-row">
+      <p class="lead">
+        ช่วย Founder เปลี่ยน Data, Strategy และ Decision Frameworks
+        ให้กลายเป็น<em>การตัดสินใจที่ถูกต้อง</em> —
+        ก่อนจะลงแรง ลงเงิน และลงมือผิดทาง
+      </p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">
+          Book a Strategy Call
+          <span class="arrow">→</span>
+        </a>
+        <a href="articles.html" class="btn btn-ghost">
+          Read Articles
+          <span class="arrow">→</span>
+        </a>
+        <div class="hero-meta" style="margin-top: 24px;">
+          <span>Available · 2026 Q2</span>
+          <span>Based in Bangkok · Working globally</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="py-20 bg-background-light dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
-<div>
-<h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">บทความแนะนำ</h2>
-<p class="text-gray-500 dark:text-gray-400">อัปเดตความรู้ใหม่ๆ</p>
-</div>
-<a class="hidden sm:flex items-center gap-1 text-primary hover:text-blue-700 font-medium transition" href="assets/blog.html">
-                    ดูทั้งหมด <span class="material-icons-outlined text-sm">arrow_right_alt</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<article class="bg-white dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col h-full group">
-<div class="h-52 overflow-hidden relative">
-<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition z-10"></div>
-<img alt="การทำ Dashboard เบื้องต้นสำหรับมือใหม่" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=600&h=400&fit=crop"/>
-<span class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-semibold px-3 py-1 rounded-full text-blue-600 dark:text-blue-400 z-20 shadow-sm">Dashboard</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<div class="text-xs font-medium text-gray-400 mb-2 flex items-center gap-2 uppercase tracking-wide">
-<span class="material-icons-outlined text-sm">calendar_today</span> 15 ธ.ค. 2024
-                        </div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-primary transition leading-snug">
-                            การทำ Dashboard เบื้องต้น: เริ่มต้นอย่างไรให้ถูกทาง
-                        </h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-1">
-                            เรียนรู้การทำ Dashboard ตั้งแต่ศูนย์ ตั้งแต่เลือกเครื่องมือ ออกแบบ Layout ไปจนถึง Data Visualization ที่ดูง่ายและสวยงาม
-                        </p>
-<a class="inline-flex items-center text-sm font-semibold text-primary mt-auto group-hover:translate-x-1 transition" href="#">
-                            อ่านต่อ <span class="material-icons-outlined text-base ml-1">arrow_forward</span>
-</a>
-</div>
-</article>
-<article class="bg-white dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col h-full group">
-<div class="h-52 overflow-hidden relative">
-<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition z-10"></div>
-<img alt="เครื่องมือทำ Dashboard ยอดนิยม Power BI Looker Studio Tableau" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"/>
-<span class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-semibold px-3 py-1 rounded-full text-purple-600 dark:text-purple-400 z-20 shadow-sm">เครื่องมือ</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<div class="text-xs font-medium text-gray-400 mb-2 flex items-center gap-2 uppercase tracking-wide">
-<span class="material-icons-outlined text-sm">calendar_today</span> 10 ธ.ค. 2024
-                        </div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-primary transition leading-snug">
-                            เปรียบเทียบเครื่องมือทำ Dashboard: Power BI vs Looker Studio vs Tableau
-                        </h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-1">
-                            แต่ละเครื่องมือเหมาะกับใคร? เปรียบข้อดีข้อเสียแบบตรงๆ พร้อมคำแนะนำว่าควรเลือกอะไรตามบริบทของงาน
-                        </p>
-<a class="inline-flex items-center text-sm font-semibold text-primary mt-auto group-hover:translate-x-1 transition" href="#">
-                            อ่านต่อ <span class="material-icons-outlined text-base ml-1">arrow_forward</span>
-</a>
-</div>
-</article>
-<article class="bg-white dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col h-full group">
-<div class="h-52 overflow-hidden relative">
-<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition z-10"></div>
-<img alt="ออกแบบ Dashboard ให้อ่านง่าย Data Visualization Tips" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"/>
-<span class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-semibold px-3 py-1 rounded-full text-teal-600 dark:text-teal-400 z-20 shadow-sm">Data Viz</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<div class="text-xs font-medium text-gray-400 mb-2 flex items-center gap-2 uppercase tracking-wide">
-<span class="material-icons-outlined text-sm">calendar_today</span> 5 ธ.ค. 2024
-                        </div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-primary transition leading-snug">
-                            ออกแบบ Dashboard ให้อ่านง่าย: 5 หลักการ Data Visualization ที่ต้องรู้
-                        </h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-1">
-                            Dashboard ที่ดีไม่ได้แค่สวย แต่ต้องสื่อสารข้อมูลได้ทันที รวม 5 หลักการที่ใช้จริงในงาน Data
-                        </p>
-<a class="inline-flex items-center text-sm font-semibold text-primary mt-auto group-hover:translate-x-1 transition" href="#">
-                            อ่านต่อ <span class="material-icons-outlined text-base ml-1">arrow_forward</span>
-</a>
-</div>
-</article>
-</div>
-</div>
+
+<!-- ============== PROBLEM ============== -->
+<section class="problem" data-screen-label="03 Problem">
+  <div class="wrap">
+    <span class="eyebrow" style="display: block; margin-bottom: 48px;">— The Problem</span>
+    <p class="problem-quote">
+      ธุรกิจส่วนใหญ่ไม่ได้พัง<br />
+      เพราะ<span class="strike">ทำไม่เก่ง</span> —<br />
+      แต่พังเพราะยัง<span class="underline">ไม่เลือกทิศทาง</span>
+    </p>
+
+    <div style="margin-top: 96px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; padding-top: 40px; border-top: 1px solid var(--rule);">
+      <div>
+        <span class="num">01</span>
+        <p style="font-size: 14px; color: var(--ink-2); margin-top: 12px; line-height: 1.5;">มีข้อมูลเยอะ<br />แต่ตัดสินใจไม่ได้</p>
+      </div>
+      <div>
+        <span class="num">02</span>
+        <p style="font-size: 14px; color: var(--ink-2); margin-top: 12px; line-height: 1.5;">Dashboard มี<br />แต่ไม่รู้ต้องดูอะไร</p>
+      </div>
+      <div>
+        <span class="num">03</span>
+        <p style="font-size: 14px; color: var(--ink-2); margin-top: 12px; line-height: 1.5;">ผู้บริหารถาม<br />“แล้วยังไงต่อ?”</p>
+      </div>
+      <div>
+        <span class="num">04</span>
+        <p style="font-size: 14px; color: var(--ink-2); margin-top: 12px; line-height: 1.5;">ไม่มั่นใจว่า<br />ควรไปทางไหน</p>
+      </div>
+      <div>
+        <span class="num">05</span>
+        <p style="font-size: 14px; color: var(--ink-2); margin-top: 12px; line-height: 1.5;">ทีมทำงานหนัก<br />แต่ทิศทางไม่ชัด</p>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="py-20 bg-white dark:bg-surface-dark relative overflow-hidden">
-<div class="absolute right-0 top-0 w-1/3 h-full bg-blue-50 dark:bg-blue-900/10 skew-x-12 translate-x-12 z-0"></div>
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
-<div class="w-full md:w-1/2 flex justify-center md:justify-end">
-<div class="relative w-64 h-64 lg:w-80 lg:h-80 group">
-<div class="absolute inset-0 bg-secondary rounded-full transform translate-x-4 translate-y-4 opacity-20 group-hover:translate-x-2 group-hover:translate-y-2 transition duration-500"></div>
-<img alt="โปรไฟล์" class="w-full h-full object-cover rounded-full border-8 border-white dark:border-surface-dark shadow-2xl relative z-10" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop"/>
-<div class="absolute bottom-4 right-4 lg:bottom-8 lg:right-8 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg z-20 text-primary animate-bounce">
-<span class="material-icons-outlined text-3xl">verified</span>
-</div>
-</div>
-</div>
-<div class="w-full md:w-1/2 text-center md:text-left">
-<h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                        สวัสดีครับ
-                    </h2>
-<p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        ยินดีต้อนรับสู่พื้นที่ของผม ที่นี่คือแหล่งรวมความรู้ ประสบการณ์ และแนวคิดต่างๆ ที่ผมอยากจะแบ่งปันให้กับทุกคน เพื่อเรียนรู้และเติบโตไปด้วยกัน
-                    </p>
-<a class="inline-block bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600 px-8 py-3 rounded-lg font-medium transition shadow-sm hover:shadow-md" href="assets/about.html">
-                        เกี่ยวกับผมเพิ่มเติม
-                    </a>
-</div>
-</div>
-</div>
+
+<!-- ============== FRAMEWORK ============== -->
+<section data-screen-label="04 Framework" style="padding-top: 0;">
+  <div class="section-banner">
+    <div class="section-bg">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=2400&amp;q=85&amp;fm=jpg" alt="" loading="lazy" onerror="this.style.display='none'" />
+    </div>
+    <div class="wrap">
+      <div class="framework-header">
+        <div>
+          <span class="eyebrow">— The Framework</span>
+          <h2 style="margin-top: 24px;">Decision<br /><em style="font-style: italic; color: var(--accent);">Process</em></h2>
+        </div>
+        <p class="sec-intro">
+          การตัดสินใจที่ดีไม่ใช่ความบังเอิญ —
+          เป็นกระบวนการที่<em>ทำซ้ำได้</em>
+          ห้าขั้นตอนต่อไปนี้คือสิ่งที่ผมใช้กับลูกค้าทุกราย
+          เพื่อเปลี่ยนข้อมูลให้กลายเป็นทิศทางที่ชัดเจน
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="framework-diagram">
+      <div class="framework-step">
+        <div class="step-num"><span class="n">01</span>STEP</div>
+        <div class="dot-row"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <h4>Clarify the Decision</h4>
+        <p>กำหนดให้ชัดว่ากำลังตัดสินใจอะไรกันแน่ — และอะไรไม่ใช่</p>
+      </div>
+      <div class="framework-step">
+        <div class="step-num"><span class="n">02</span>STEP</div>
+        <div class="dot-row"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <h4>Analyze the Data</h4>
+        <p>มองข้อมูลในมุมที่เกี่ยวกับ Decision ไม่ใช่แค่ Report</p>
+      </div>
+      <div class="framework-step">
+        <div class="step-num"><span class="n">03</span>STEP</div>
+        <div class="dot-row"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+        <h4>Identify Trade-offs</h4>
+        <p>ทุกทางเลือกมีต้นทุน — รู้ก่อนว่าจะแลกอะไรกับอะไร</p>
+      </div>
+      <div class="framework-step">
+        <div class="step-num"><span class="n">04</span>STEP</div>
+        <div class="dot-row"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+        <h4>Choose Direction</h4>
+        <p>เลือกทาง — โดยมีเหตุผลที่อธิบายให้ทีมเข้าใจได้</p>
+      </div>
+      <div class="framework-step">
+        <div class="step-num"><span class="n">05</span>STEP</div>
+        <div class="dot-row"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+        <h4>Execute with Confidence</h4>
+        <p>ลงมือโดยรู้ว่าทำไม — และจะปรับเมื่อใด</p>
+      </div>
+    </div>
+
+    <div class="framework-flow">
+      <span>Data · Information · Signal</span>
+      <span style="display: flex; align-items: center; gap: 16px;">
+        <span class="line" style="width: 80px;"></span>
+        <span style="color: var(--accent);">→ Direction</span>
+        <span class="line" style="width: 80px;"></span>
+      </span>
+      <span style="text-align: right;">Confidence · Growth · Outcome</span>
+    </div>
+  </div>
 </section>
-<section class="py-20 bg-secondary dark:bg-slate-900 text-center px-4 relative">
-<div class="max-w-3xl mx-auto relative z-10">
-<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/20 mb-6">
-<span class="material-icons-outlined text-4xl text-blue-300">mark_email_unread</span>
-</div>
-<h2 class="text-3xl font-bold text-white mb-4">รับข่าวสารและเคล็ดลับ</h2>
-<p class="text-blue-100 mb-8 max-w-lg mx-auto">
-                สมัครสมาชิกเพื่อรับบทความอัปเดตก่อนใคร เนื้อหาคุณภาพส่งตรงถึงอีเมลของคุณ
-            </p>
-<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-<input class="flex-1 px-5 py-3 rounded-lg border-0 focus:ring-2 focus:ring-primary text-gray-900 placeholder-gray-400 shadow-lg outline-none" placeholder="กรอกอีเมลของคุณ" type="email"/>
-<button class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow-lg whitespace-nowrap" type="button">
-                    สมัครสมาชิก
-                </button>
-</form>
-<p class="text-xs text-blue-300 mt-4 opacity-60">
-                เราเคารพความเป็นส่วนตัวของคุณ จะไม่มีสแปมแน่นอน
-            </p>
-</div>
+
+<!-- ============== SERVICES ============== -->
+<section id="services" data-screen-label="06 Services" style="padding-top: 0;">
+  <div class="section-banner">
+    <div class="section-bg">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=2400&amp;q=85&amp;fm=jpg" alt="" loading="lazy" onerror="this.style.display='none'" />
+    </div>
+    <div class="wrap">
+      <div class="sec-header" style="margin-bottom: 0;">
+        <div>
+          <span class="eyebrow">— Services</span>
+          <h2 style="margin-top: 24px;">How we<br />work together</h2>
+        </div>
+        <p class="sec-intro">
+          งานที่ผมรับมาทั้งหมดมีจุดร่วมเดียวกัน —
+          ทำให้การตัดสินใจของ Founder ชัดขึ้น
+          เลือกขนาดที่เหมาะกับสถานการณ์ของคุณ
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="services-grid">
+      <div class="service">
+        <div class="s-num">01</div>
+        <div>
+          <h4>Decision Dashboard Audit</h4>
+          <p>วิเคราะห์ Dashboard/Report ที่คุณมี — ระบุ KPI ที่สำคัญ ชี้ปัญหาที่ซ่อนอยู่ และเสนอแนวทางตัดสินใจที่ใช้ได้จริง</p>
+        </div>
+        <div class="s-tag">Fixed Project</div>
+      </div>
+      <div class="service">
+        <div class="s-num">02</div>
+        <div>
+          <h4>Strategy &amp; Data Consulting</h4>
+          <p>ทำงานร่วมกับทีม Strategy/Data ของคุณเป็น Project-based — ตั้งแต่กำหนดคำถามไปจนถึงการตัดสินใจสุดท้าย</p>
+        </div>
+        <div class="s-tag">Project · Retainer</div>
+      </div>
+      <div class="service">
+        <div class="s-num">03</div>
+        <div>
+          <h4>Marketing Data Analysis</h4>
+          <p>ดู Marketing Performance Data แล้วบอกว่าควรทำอะไรต่อ — ไม่ใช่แค่ Report ตัวเลข แต่ Output คือ Decision</p>
+        </div>
+        <div class="s-tag">Fixed Project</div>
+      </div>
+      <div class="service">
+        <div class="s-num">04</div>
+        <div>
+          <h4>Founder Decision Coaching</h4>
+          <p>เซสชั่น 1:1 สำหรับ Founder ที่กำลังเจอจุดเปลี่ยน — ใช้ Decision Framework วิเคราะห์ทางเลือกร่วมกัน</p>
+        </div>
+        <div class="s-tag">1:1 Session</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+      <p style="font-family: var(--display); font-size: 18px; color: var(--ink-2); max-width: 50ch; letter-spacing: -0.01em;">
+        รายละเอียดของแต่ละบริการ ส่งให้ตอนติดต่อ
+      </p>
+      <a href="contact.html" class="btn btn-ghost">ดูรายละเอียดบริการ <span class="arrow">→</span></a>
+    </div>
+  </div>
 </section>
-<footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-<div class="col-span-1 lg:col-span-1">
-<div class="flex items-center gap-2 mb-4 text-white">
-<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-bold text-lg shadow-sm">W</div>
-<span class="font-bold text-lg">เว็บไซต์ของฉัน</span>
-</div>
-<p class="text-sm text-gray-500 mb-4">
-                        แหล่งรวมความรู้และไอเดียใหม่ๆ
-                    </p>
-</div>
-<div>
-<h3 class="text-white font-semibold mb-4">เมนูหลัก</h3>
-<ul class="space-y-2 text-sm">
-<li><a class="hover:text-primary transition" href="index.html">หน้าแรก</a></li>
-<li><a class="hover:text-primary transition" href="assets/blog.html">บทความ</a></li>
-<li><a class="hover:text-primary transition" href="#">โปรเจกต์</a></li>
-<li><a class="hover:text-primary transition" href="assets/about.html">เกี่ยวกับ</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-white font-semibold mb-4">ติดต่อ</h3>
-<ul class="space-y-3 text-sm">
-<li class="flex items-center gap-2">
-<span class="material-icons-outlined text-sm">email</span>
-                            hello@example.com
-                        </li>
-</ul>
-</div>
-<div>
-<h3 class="text-white font-semibold mb-4">ติดตาม</h3>
-<div class="flex space-x-4">
-<a class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition group" href="#">
-<span class="font-bold">f</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition group" href="#">
-<span class="font-bold">X</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition group" href="#">
-<span class="font-bold text-xs">YT</span>
-</a>
-</div>
-</div>
-</div>
-<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-<p>© 2024 เว็บไซต์ของฉัน สงวนลิขสิทธิ์</p>
-<div class="flex space-x-4 mt-4 md:mt-0">
-<a class="hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-white" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
+
+<!-- ============== CTA BANNER ============== -->
+<section data-screen-label="07 CTA" style="padding: 0;">
+  <div class="section-banner cta-banner">
+    <div class="section-bg">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2400&amp;q=85&amp;fm=jpg" alt="" loading="lazy" onerror="this.style.display='none'" />
+    </div>
+    <div class="wrap">
+      <div class="cta-grid">
+        <div>
+          <span class="eyebrow">— Get Started</span>
+          <h2>ไม่แน่ใจ<br />ว่าเริ่ม<em>ตรงไหนดี</em>?</h2>
+        </div>
+        <div class="cta-right">
+          <p>
+            เริ่มด้วย Strategy Call ฟรี 30 นาที —
+            เล่าสถานการณ์ปัจจุบันให้ฟัง
+            แล้วผมจะช่วยดูว่ามีทางเลือกอะไรบ้าง
+          </p>
+          <a href="contact.html" class="btn btn-primary">Book a Strategy Call <span class="arrow">→</span></a>
+          <div class="cta-meta">
+            <span>↩ ตอบใน 24 ชม.</span>
+            <span>No pitch · No upsell</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROMISE ============== -->
+<section class="promise" data-screen-label="07 Promise">
+  <div class="wrap">
+    <span class="eyebrow" style="display: block; margin-bottom: 40px;">— Brand Promise</span>
+    <div class="promise-grid">
+      <div class="promise-item">
+        <div class="p-num">PROMISE 01</div>
+        <h3>Turn <em>Data</em> into Direction.</h3>
+      </div>
+      <div class="promise-item">
+        <div class="p-num">PROMISE 02</div>
+        <h3>Turn <em>Information</em> into Decisions.</h3>
+      </div>
+      <div class="promise-item">
+        <div class="p-num">PROMISE 03</div>
+        <h3>Turn <em>Strategy</em> into Clear Choices.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ARTICLES ============== -->
+<section data-screen-label="08 Articles" style="padding-bottom: calc(64px * var(--density));">
+  <div class="wrap">
+    <div class="sec-header">
+      <div>
+        <span class="eyebrow">— Content Hub</span>
+        <h2 style="margin-top: 24px;">บทความล่าสุด</h2>
+      </div>
+      <p class="sec-intro">
+        เขียนเกี่ยวกับ Business Strategy, Decision Making,
+        Dashboard Design และ Logical Thinking —
+        ทุกบทความออกแบบมาเพื่อให้คุณตัดสินใจดีขึ้น
+      </p>
+    </div>
+
+    <div class="articles-grid">
+      <a href="#" class="article-card">
+        <div class="a-thumb">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&amp;h=675&amp;fit=crop&amp;q=85&amp;fm=jpg" alt="Dashboard · KPI screens" loading="lazy" />
+        </div>
+        <div class="a-meta">
+          <span class="cat">Decision Making</span>
+          <span>05 MIN</span>
+        </div>
+        <h4>ทำไม Dashboard ส่วนใหญ่ถึงไม่ช่วยให้ตัดสินใจ</h4>
+        <p>ปัญหาไม่ใช่ที่ตัวเลข — แต่อยู่ที่คำถาม Dashboard ที่ดีเริ่มจากการรู้ว่าจะตัดสินใจอะไร</p>
+        <div class="a-read">Read Article →</div>
+      </a>
+      <a href="#" class="article-card">
+        <div class="a-thumb">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&amp;h=675&amp;fit=crop&amp;q=85&amp;fm=jpg" alt="Path through fog — direction" loading="lazy" />
+        </div>
+        <div class="a-meta">
+          <span class="cat">Strategy</span>
+          <span>08 MIN</span>
+        </div>
+        <h4>Direction กับ Goal — ทำไม Founder สับสนสองคำนี้</h4>
+        <p>Goal บอกว่าจะไปถึงไหน — Direction บอกว่าจะไปอย่างไร ไม่มีอันแรกถ้าไม่มีอันหลัง</p>
+        <div class="a-read">Read Article →</div>
+      </a>
+      <a href="#" class="article-card">
+        <div class="a-thumb">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&amp;h=675&amp;fit=crop&amp;q=85&amp;fm=jpg" alt="Circuit — trade-offs" loading="lazy" />
+        </div>
+        <div class="a-meta">
+          <span class="cat">Logical Thinking</span>
+          <span>06 MIN</span>
+        </div>
+        <h4>Trade-off คือหัวใจของการตัดสินใจที่ดี</h4>
+        <p>ทุกทางเลือกมีต้นทุน — ผู้นำที่ดีไม่ใช่คนเลือกถูก แต่คือคนเข้าใจว่าตัวเองกำลังแลกอะไรกับอะไร</p>
+        <div class="a-read">Read Article →</div>
+      </a>
+    </div>
+
+    <div style="margin-top: 48px; text-align: center;">
+      <a href="articles.html" class="btn btn-ghost">Browse All Articles <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section data-screen-label="09 About" style="padding-top: calc(64px * var(--density));">
+  <div class="wrap">
+    <span class="eyebrow" style="display: block; margin-bottom: 64px;">— About</span>
+    <div class="about">
+      <div class="about-photo">
+        <img src="portrait.png" alt="Napons — Strategy Analyst" loading="lazy" />
+        <span class="ph-cap">napons · Bangkok 2026</span>
+      </div>
+      <div class="about-body">
+        <p>
+          ผมคือ <em style="color: var(--accent); font-style: italic;">Strategist + Data Analyst + Marketing Thinker</em>
+          ที่ช่วย Founder ตัดสินใจทิศทางธุรกิจให้ดีขึ้น
+        </p>
+        <p class="smaller">
+          ทำงานที่จุดตัดของ Strategy, Data และ Decision Science —
+          เชื่อว่าธุรกิจส่วนใหญ่ไม่ได้ขาดข้อมูล แต่ขาดวิธีคิดที่จะเปลี่ยนข้อมูลให้กลายเป็นทิศทาง
+          งานของผมคือทำให้กระบวนการตัดสินใจนั้นชัด ทำซ้ำได้ และเป็นระบบ
+        </p>
+        <p class="smaller">
+          ก่อนหน้านี้เคยทำงานทั้งฝั่ง Performance Marketing, Business Intelligence
+          และ Strategy Consulting — ทำให้เห็นว่า Founder ส่วนใหญ่ไม่ได้พังเพราะข้อมูลไม่พอ
+          แต่พังเพราะไม่มีระบบในการเลือกทาง
+        </p>
+
+        <div class="about-stats">
+          <div>
+            <div class="stat-num">42<span class="unit">+</span></div>
+            <div class="stat-label">Founders Helped</div>
+          </div>
+          <div>
+            <div class="stat-num">8<span class="unit">yr</span></div>
+            <div class="stat-label">Strategy &amp; Data</div>
+          </div>
+          <div>
+            <div class="stat-num">12<span class="unit">+</span></div>
+            <div class="stat-label">Industries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA / FOOTER ============== -->
+<footer class="foot" data-screen-label="11 Footer">
+  <div class="wrap">
+    <span class="eyebrow" style="display: block; margin-bottom: 48px;">— Final Word</span>
+    <h2 style="max-width: 18ch;">
+      Ready to make<br />
+      <em style="color: var(--accent);">clearer</em> business<br />
+      decisions?
+    </h2>
+
+    <div style="margin-top: 80px; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 64px; padding-top: 48px; border-top: 1px solid var(--inv-rule);">
+      <div>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--inv-muted); margin-bottom: 24px;">Start Here</div>
+        <a href="contact.html" class="btn btn-primary">Book a Strategy Call <span class="arrow">→</span></a>
+        <p style="font-family: var(--display); font-size: 18px; color: var(--inv-ink-2); margin-top: 24px; max-width: 36ch; letter-spacing: -0.01em;">
+          30 นาทีฟรี — คุยให้แน่ใจว่าเหมาะกัน
+        </p>
+      </div>
+
+      <div>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--inv-muted); margin-bottom: 24px;">Navigate</div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-family: var(--display); font-size: 18px; letter-spacing: -0.01em;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--inv-muted); margin-bottom: 24px;">Elsewhere</div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-family: var(--display); font-size: 18px; letter-spacing: -0.01em;">
+          <li><a href="#">LinkedIn ↗</a></li>
+          <li><a href="#">Substack ↗</a></li>
+          <li><a href="#">X · Twitter ↗</a></li>
+          <li><a href="mailto:hello@napons.com">hello@napons.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>napons. © 2026</span>
+      <span>Strategy Analyst · Business Direction</span>
+      <span>Bangkok · TH</span>
+    </div>
+  </div>
 </footer>
 
-<script src="js/navbar.js"></script>
-</body></html>
+<!-- ============== TWEAKS ============== -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<div id="tweaks-root"></div>
+<script type="text/babel">
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "#2563eb",
+  "density": 0.7,
+  "heroVariant": "stacked"
+}/*EDITMODE-END*/;
+
+function Tweaks() {
+  const [t, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+
+  React.useEffect(() => {
+    document.documentElement.style.setProperty('--accent', t.accent);
+    document.documentElement.style.setProperty('--density', String(t.density));
+  }, [t]);
+
+  return (
+    <window.TweaksPanel title="Tweaks">
+      <window.TweakSection label="Accent color">
+        <window.TweakColor
+          label="Accent"
+          value={t.accent}
+          onChange={(v) => setTweak('accent', v)}
+          options={['#c9594a', '#3f6b4f', '#2563eb', '#8a3a2a', '#1a1a1a']}
+        />
+      </window.TweakSection>
+      <window.TweakSection label="Spacing">
+        <window.TweakSlider
+          label="Density"
+          min={0.7} max={1.4} step={0.05}
+          value={t.density}
+          unit="×"
+          onChange={(v) => setTweak('density', v)}
+        />
+      </window.TweakSection>
+    </window.TweaksPanel>
+  );
+}
+
+const waitForKit = setInterval(() => {
+  if (window.TweaksPanel && window.useTweaks) {
+    clearInterval(waitForKit);
+    ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<Tweaks />);
+  }
+}, 50);
+</script>
+
+</body>
+</html>

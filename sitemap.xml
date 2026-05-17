@@ -2,32 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://napons.com/</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://napons.com/assets/blog.html</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://napons.com/articles.html</loc>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://napons.com/assets/about.html</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://napons.com/contact.html</loc>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://napons.com/assets/newsletter.html</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://napons.com/assets/dashboard-vs-report.html</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
