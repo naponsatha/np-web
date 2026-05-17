@@ -1,229 +1,989 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Dashboard คืออะไร และต่างจาก Report อย่างไร? | การทำ Dashboard</title>
-    <meta name="description" content="เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์ พร้อมตัวอย่างจากชีวิตจริง"/>
-    <link rel="canonical" href="https://napons.com/assets/dashboard-vs-report.html"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="https://napons.com/assets/dashboard-vs-report.html"/>
-    <meta property="og:title" content="Dashboard คืออะไร และต่างจาก Report อย่างไร?"/>
-    <meta property="og:description" content="เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์"/>
-    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Dashboard คืออะไร และต่างจาก Report อย่างไร? สิ่งที่หลายคนเข้าใจผิด",
-      "description": "เรียนรู้ว่า Dashboard คืออะไร ต่างจาก Report อย่างไร และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
-      "datePublished": "2025-05-13",
-      "dateModified": "2025-05-13",
-      "inLanguage": "th",
-      "publisher": {
-        "@type": "Person",
-        "name": "Napon Satha"
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://napons.com/assets/dashboard-vs-report.html"
-      }
-    }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-    <link href="../css/navbar.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <script src="../js/tailwind-config.js"></script>
-    <style>
-        body { font-family: 'Prompt', sans-serif; }
-        .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #111827; }
-        .prose h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
-        .prose p { margin-bottom: 1.25rem; line-height: 1.85; color: #374151; }
-        .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
-        .prose ul li { margin-bottom: 0.5rem; color: #374151; list-style-type: disc; }
-        .prose strong { color: #111827; }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>การทำ Dashboard คืออะไร และต่างจาก Report อย่างไร? · napons.</title>
+<meta name="description" content="การทำ Dashboard ที่ดีมีไว้ Monitor KPI ไม่ใช่โชว์ตัวเลขเท่ — เรียนรู้ความต่างระหว่าง Dashboard กับ Report พร้อมตัวอย่างจากธุรกิจจริงที่ใช้ได้ทันที"/>
+<link rel="canonical" href="https://napons.com/assets/dashboard-vs-report.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://napons.com/assets/dashboard-vs-report.html"/>
+<meta property="og:title" content="การทำ Dashboard คืออะไร และต่างจาก Report อย่างไร? · napons."/>
+<meta property="og:description" content="การทำ Dashboard ที่ดีมีไว้ Monitor KPI ไม่ใช่โชว์ตัวเลขเท่ — เรียนรู้ความต่างระหว่าง Dashboard กับ Report พร้อมตัวอย่างจากธุรกิจจริง"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "การทำ Dashboard คืออะไร และต่างจาก Report อย่างไร?",
+  "description": "การทำ Dashboard ที่ดีมีไว้ Monitor KPI ไม่ใช่โชว์ตัวเลขเท่ — เรียนรู้ความต่างระหว่าง Dashboard กับ Report และทำไมหลายองค์กรถึงใช้ผิดวัตถุประสงค์",
+  "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+  "datePublished": "2025-05-13",
+  "dateModified": "2025-05-17",
+  "inLanguage": "th",
+  "author": {
+    "@type": "Person",
+    "name": "napons.",
+    "url": "https://napons.com"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "napons.",
+    "url": "https://napons.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://napons.com/assets/dashboard-vs-report.html"
+  },
+  "keywords": "การทำ dashboard, Dashboard คืออะไร, Dashboard vs Report, KPI Monitoring, Data Visualization"
+}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7RW4TRZ');</script>
+<!-- End Google Tag Manager -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  /* Reading progress */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--accent);
+    z-index: 100;
+    transition: width 0.1s linear;
+    width: 0;
+  }
+
+  /* Article header */
+  .art-header {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(80px * var(--density));
+    padding-bottom: calc(72px * var(--density));
+    border-bottom: 1px solid var(--rule);
+  }
+  .art-header-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .art-header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.42) contrast(1.15) saturate(0.5);
+  }
+  .art-header-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(110% 90% at 20% 60%, rgba(13,13,15,0.15) 0%, rgba(13,13,15,0.55) 55%, rgba(13,13,15,0.82) 100%),
+      linear-gradient(180deg, rgba(13,13,15,0.55) 0%, rgba(13,13,15,0.35) 50%, rgba(13,13,15,0.92) 100%);
+  }
+  .art-header > .wrap {
+    position: relative;
+    z-index: 1;
+  }
+  .art-meta-row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(244,242,236,0.6);
+    margin-bottom: 48px;
+  }
+  .art-meta-row .cat {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 6px 12px;
+  }
+  .art-meta-row .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(244,242,236,0.3); }
+  .art-header h1 {
+    font-size: clamp(40px, 5.6vw, 84px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    max-width: 22ch;
+    margin-bottom: 40px;
+  }
+  .art-header h1 em { color: var(--accent); font-style: italic; }
+  .art-header .deck {
+    font-family: var(--display);
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 1.45;
+    color: var(--ink-2);
+    max-width: 56ch;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+  }
+
+  /* Author byline */
+  .byline {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(244,242,236,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .byline-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .byline .avatar {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--bg-warm);
+    border: 1px solid rgba(244,242,236,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--display);
+    font-weight: 500;
+    color: var(--ink);
+    overflow: hidden;
+  }
+  .byline .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  .byline .auth {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .byline .auth-name {
+    font-family: var(--display);
+    font-size: 16px;
+    color: var(--ink);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .byline .auth-role {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(244,242,236,0.55);
+  }
+  .byline-actions {
+    display: flex;
+    gap: 8px;
+  }
+  .byline-actions button {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid rgba(244,242,236,0.25);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .byline-actions button:hover { border-color: var(--ink); background: rgba(244,242,236,0.05); }
+
+  /* Article body layout */
+  .art-body {
+    padding: calc(72px * var(--density)) 0 calc(64px * var(--density));
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  /* Top TOC — horizontal */
+  .art-toc {
+    margin-bottom: 64px;
+    padding: 32px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .art-toc .toc-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .art-toc ol {
+    list-style: none;
+    counter-reset: toc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 32px;
+  }
+  .art-toc ol li {
+    counter-increment: toc;
+    padding-left: 32px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .art-toc ol li::before {
+    content: counter(toc, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    top: 3px;
+  }
+  .art-toc ol li a {
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .art-toc ol li a:hover { color: var(--ink); }
+  .art-toc ol li.active a { color: var(--accent); }
+  .art-toc ol li.active::before { color: var(--accent); }
+
+  /* Prose */
+  .prose {
+    font-family: var(--sans);
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .prose > * { max-width: 100%; }
+  .prose p {
+    margin-bottom: 28px;
+    color: var(--ink);
+  }
+  .prose p.dropcap::first-letter {
+    font-family: var(--display);
+    font-size: 88px;
+    line-height: 0.88;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    float: left;
+    margin: 6px 14px 0 -2px;
+    color: var(--accent);
+  }
+  .prose h2 {
+    font-family: var(--display);
+    font-size: clamp(28px, 2.6vw, 38px);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 72px 0 24px;
+    scroll-margin-top: 100px;
+    position: relative;
+  }
+  .prose h2 .hnum {
+    position: absolute;
+    left: -56px;
+    top: 12px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.14em;
+  }
+  .prose h3 {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    color: var(--ink);
+    margin: 48px 0 16px;
+  }
+  .prose em { font-style: italic; color: var(--accent); font-weight: 500; }
+  .prose strong { font-weight: 600; color: var(--ink); }
+  .prose a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }
+
+  .prose blockquote {
+    margin: 48px 0;
+    padding: 0 0 0 32px;
+    border-left: 2px solid var(--accent);
+    font-family: var(--display);
+    font-size: clamp(22px, 2vw, 28px);
+    line-height: 1.4;
+    color: var(--ink);
+    font-style: italic;
+    letter-spacing: -0.01em;
+  }
+  .prose blockquote cite {
+    display: block;
+    margin-top: 16px;
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+  }
+
+  .prose ul, .prose ol {
+    margin: 0 0 28px 0;
+    padding-left: 28px;
+    color: var(--ink-2);
+  }
+  .prose ul li, .prose ol li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+  .prose ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose ul li {
+    padding-left: 24px;
+    position: relative;
+  }
+  .prose ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  /* Figure with caption */
+  .prose figure {
+    margin: 56px 0;
+    width: 100%;
+  }
+  .prose figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--rule);
+    filter: brightness(0.85) contrast(1.05) saturate(0.7);
+  }
+  .prose figcaption {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .prose figcaption .cap-desc {
+    font-family: var(--display);
+    font-size: 14px;
+    letter-spacing: -0.005em;
+    text-transform: none;
+    color: var(--ink-2);
+    max-width: 50ch;
+  }
+
+  /* Callout box */
+  .callout {
+    margin: 48px 0;
+    padding: 32px;
+    background: var(--bg-warm);
+    border: 1px solid var(--rule);
+    position: relative;
+  }
+  .callout .c-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .callout p {
+    font-family: var(--display);
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+
+  /* Two-column compare */
+  .compare {
+    margin: 56px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: 1px solid var(--ink);
+  }
+  .compare > div {
+    padding: 32px 24px 32px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .compare > div:nth-child(odd) {
+    border-right: 1px solid var(--rule);
+    padding-right: 24px;
+  }
+  .compare > div:nth-child(even) {
+    padding-left: 24px;
+  }
+  .compare h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .compare .left h4 { color: var(--muted); }
+  .compare .right h4 { color: var(--accent); }
+  .compare p {
+    font-family: var(--display);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .compare .left p { color: var(--muted); }
+  .compare .right p { color: var(--ink); }
+
+  /* End of article */
+  .art-end {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+  .art-end-rule {
+    text-align: center;
+    margin: 80px 0 48px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--muted);
+  }
+  .art-end-cta {
+    background: var(--bg-warm);
+    border: 1px solid var(--rule);
+    padding: 48px 40px;
+    text-align: center;
+  }
+  .art-end-cta h3 {
+    font-family: var(--display);
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+  }
+  .art-end-cta h3 em { color: var(--accent); font-style: italic; }
+  .art-end-cta p {
+    font-family: var(--display);
+    font-size: 15px;
+    color: var(--ink-2);
+    margin: 0 auto 28px;
+    max-width: 44ch;
+  }
+
+  /* Author block */
+  .author-block {
+    max-width: 720px;
+    margin: 80px auto 0;
+    padding: 0 var(--gutter);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .author-block .a-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--bg-warm);
+  }
+  .author-block .a-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+  }
+  .author-block .a-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .author-block h4 {
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .author-block p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin-bottom: 16px;
+  }
+  .author-block .a-links {
+    display: flex;
+    gap: 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .author-block .a-links a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
+  .author-block .a-links a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+  /* Related */
+  .related {
+    padding: calc(120px * var(--density)) 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 120px;
+  }
+  .related-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .related h2 {
+    font-family: var(--display);
+    font-size: clamp(28px, 3vw, 44px);
+    letter-spacing: -0.02em;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .related-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    text-decoration: none;
+    color: var(--ink);
+    align-items: start;
+  }
+  .related-card .r-thumb {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+  }
+  .related-card .r-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) contrast(1.1) saturate(0.6);
+    transition: filter 0.3s ease, transform 0.5s ease;
+  }
+  .related-card:hover .r-thumb img {
+    filter: brightness(0.95) contrast(1.05) saturate(0.85);
+    transform: scale(1.04);
+  }
+  .related-card .r-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .related-card .r-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .related-card h4 {
+    font-family: var(--display);
+    font-size: 19px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+  }
+  .related-card .r-read {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: auto;
+  }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    :root { --gutter: 24px; }
+    .prose h2 .hnum { position: static; display: block; margin-bottom: 8px; }
+    .art-toc ol { grid-template-columns: 1fr; }
+    .compare { grid-template-columns: 1fr; }
+    .compare > div:nth-child(odd) { border-right: none; padding-right: 0; }
+    .compare > div:nth-child(even) { padding-left: 0; }
+    .related-grid { grid-template-columns: 1fr; }
+    .related-card { grid-template-columns: 120px 1fr; }
+    .author-block { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <div class="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">W</div>
-                    <a href="../index.html" class="font-bold text-xl tracking-tight text-gray-900">เว็บไซต์ของฉัน</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a class="nav-link" href="../index.html">หน้าแรก</a>
-                    <a class="nav-link" href="blog.html">บทความ</a>
-                    <a class="nav-link" href="about.html">เกี่ยวกับ</a>
-                </div>
-                <div class="hidden md:flex">
-                    <a class="bg-secondary hover:bg-blue-900 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-sm" href="newsletter.html">
-                        สมัครรับข่าวสาร
-                    </a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                        <span class="material-icons-outlined">menu</span>
-                    </button>
-                </div>
-            </div>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7RW4TRZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="progress-bar" id="progress"></div>
+
+<nav class="nav" data-screen-label="01 Nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">napons<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../articles.html" class="active">Articles</a>
+      <a href="../contact.html" class="nav-cta">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<section class="art-header" data-screen-label="02 Header">
+  <div class="art-header-bg">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=2400&q=85&fm=jpg" alt="" loading="eager" onerror="this.style.display='none'" />
+  </div>
+  <div class="wrap">
+    <div class="art-meta-row">
+      <span class="cat">Decision Making</span>
+      <span>Issue 035</span>
+      <span class="dot"></span>
+      <span>13 May 2025</span>
+      <span class="dot"></span>
+      <span>5 min read</span>
+      <span class="dot"></span>
+      <span>1,200 words</span>
+    </div>
+    <h1>การทำ Dashboard คืออะไร<br />และต่างจาก<br /><em>Report</em> อย่างไร?</h1>
+    <p class="deck">
+      หลายองค์กรทำ Dashboard เท่ๆ เต็มไปด้วยกราฟและตัวเลข
+      แต่ไม่มีใครรู้ว่าต้องดูตรงไหน — นี่คือความเข้าใจผิดที่แพงที่สุด
+      เกี่ยวกับ Data
+    </p>
+
+    <div class="byline">
+      <div class="byline-left">
+        <div class="avatar">
+          <img src="../portrait.png" alt="napons" />
         </div>
-    </nav>
-
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
-
-        <!-- Breadcrumb -->
-        <nav class="text-sm text-gray-400 mb-8 flex items-center gap-2">
-            <a href="../index.html" class="hover:text-primary transition">หน้าแรก</a>
-            <span class="material-icons-outlined text-sm">chevron_right</span>
-            <a href="blog.html" class="hover:text-primary transition">บทความ</a>
-            <span class="material-icons-outlined text-sm">chevron_right</span>
-            <span class="text-gray-600">Dashboard vs Report</span>
-        </nav>
-
-        <!-- Header -->
-        <header class="mb-8">
-            <span class="inline-block bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">Dashboard</span>
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-                Dashboard คืออะไร และต่างจาก Report อย่างไร? สิ่งที่หลายคนเข้าใจผิด
-            </h1>
-            <div class="flex items-center gap-3 text-sm text-gray-400">
-                <span class="material-icons-outlined text-sm">calendar_today</span>
-                <span>13 พฤษภาคม 2568</span>
-                <span>•</span>
-                <span>อ่าน 5 นาที</span>
-            </div>
-        </header>
-
-        <!-- Cover Image -->
-        <figure class="mb-10 rounded-2xl overflow-hidden shadow-md">
-            <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=500&fit=crop"
-                alt="การทำ Dashboard สำหรับ Monitor KPI ในองค์กร"
-                class="w-full h-auto object-cover"
-            />
-        </figure>
-
-        <!-- Content -->
-        <article class="prose">
-
-            <p>
-                เมื่อไม่นานมานี้ได้ดูซีรีส์ <strong>สาธุ 2</strong> บน Netflix แล้วเห็น Dashboard ที่ตัวเอกใช้ติดตามยอดบริจาควัดเป้าหมาย 1,000 ล้านบาท ทั้งในช่วงที่ยอดยังไปไม่ถึงไหน และช่วงที่ใกล้จะถึงเป้า
-            </p>
-
-            <p>
-                Dashboard ตัวนั้นมีบทบาทสำคัญในการ Monitor ความคืบหน้า ทำให้นึกถึงเรื่องที่หลายองค์กรยังเข้าใจผิดเกี่ยวกับหน้าที่ของ <strong>การทำ Dashboard</strong> วันนี้เลยอยากมาแชร์ให้ชัดขึ้น
-            </p>
-
-            <h2>Dashboard บูมขึ้นมาพร้อมกระแส Data</h2>
-
-            <p>
-                ในช่วง 2-3 ปีที่ผ่านมา กระแส Data บูมขึ้นอย่างเห็นได้ชัด ทุกบริษัทอยากเก็บ Data และผู้บริหารมักต้องการเห็น Dashboard เท่ๆ สักอันไว้ดูตัวเลข
-            </p>
-
-            <p>
-                แต่จากประสบการณ์จริง <strong>ผู้บริหารส่วนใหญ่ไม่ค่อยมีเวลาดู Dashboard</strong> เหมือนกับในซีรีส์ที่ผู้บริหารมักติดประชุมจนพลาดตัวเลขสำคัญในบางครั้ง
-            </p>
-
-            <p>
-                คนที่ควรจะดู Dashboard จริงๆ คือ <strong>Manager หรือหัวหน้าที่คอยบริหารตัวเลขสำคัญ</strong> ในหน่วยงานนั้นๆ มากกว่า
-            </p>
-
-            <h2>หน้าที่แท้จริงของ Dashboard คืออะไร</h2>
-
-            <p>
-                <strong>Dashboard มีหน้าที่หลักคือ Monitor KPI สำคัญ</strong> ที่อาจส่งผลกับองค์กร เช่น ยอดขาย ค่าโฆษณา หรือ KPI ที่เกี่ยวข้องกับหน่วยงานนั้นๆ เพื่อให้เห็นว่ามีความผิดปกติเกิดขึ้นหรือไม่
-            </p>
-
-            <ul>
-                <li>ถ้าพบความผิดปกติ — ลงไปแก้ไขปัญหาได้ทันที</li>
-                <li>ถ้ายอดสูงผิดปกติ — นำมาวิเคราะห์เป็น Report รายงานต่อผู้บริหาร</li>
-            </ul>
-
-            <h2>ความเข้าใจผิดที่พบบ่อย: Dashboard ไม่ได้มีไว้ให้ดูเท่</h2>
-
-            <p>
-                หลายคนเข้าใจผิดจึงมักนำ Data เข้าไปยัดอยู่ในหน้าเดียว ทำให้ดูมีตัวเลขเยอะ กราฟเยอะ ดูเท่ แต่กลับ<strong>ดูไม่รู้เรื่อง</strong> คนเปิดมาดูก็ไม่เข้าใจว่าจะต้องดูตรงไหน
-            </p>
-
-            <p>
-                <strong>Dashboard ที่ดีควรมีเฉพาะ KPI ที่สำคัญ</strong> และกราฟที่มองเห็นสิ่งผิดปกติได้ทันที เมื่อเจอค่าผิดปกติ ไม่ว่าจะต่ำหรือสูงกว่าปกติ ค่อยนำ Data ส่วนนั้นมาวิเคราะห์ให้ลึกลงแล้วนำเสนอผู้บริหารในรูปแบบ Report
-            </p>
-
-            <h2>ตัวอย่างจริง: ยอดชานมตกจาก 10,000 เหลือ 3,000 บาท</h2>
-
-            <p>
-                สมมติคุณทำธุรกิจเครื่องดื่มที่มีทั้งกาแฟ ชานม ชาเขียว น้ำหวาน วันหนึ่งคุณนั่งดู Dashboard แล้วพบว่าสาขาหนึ่งปกติขายชานมได้อาทิตย์ละ 10,000 บาท แต่อยู่ๆ ยอดตกเหลือแค่ 3,000 บาท
-            </p>
-
-            <p>
-                เมื่อดู Data แล้วพบว่าตกลงเฉพาะหมวดชานม แต่ยังไม่รู้สาเหตุ คุณจึงขับรถไปที่สาขานั้นแล้วสอบถามพนักงาน จึงพบว่า<strong>มีคู่แข่งใหม่เข้ามาในตลาด</strong>เป็นร้านชานมที่อัดโปรโมชั่นเพื่อดึงลูกค้า
-            </p>
-
-            <p>
-                เมื่อพบสาเหตุ คุณจึงทำ Report แจ้งผู้บริหารและทำ Forecast เพื่อออกโปรโมชั่นแก้สถานการณ์ นี่คือความแตกต่างของ <strong>Dashboard (Monitor)</strong> และ <strong>Report (Analyze)</strong>
-            </p>
-
-            <h2>เครื่องมือที่ใช้ทำ Dashboard ไม่จำเป็นต้องซับซ้อน</h2>
-
-            <p>
-                ในองค์กรที่ไม่ได้มี Database ขนาดใหญ่จนต้องใช้ SQL หรือ Python คุณก็สามารถใช้เครื่องมืออย่าง <strong>Excel หรือ Looker Studio</strong> ในการทำงานกับ Data ได้เลย
-            </p>
-
-            <p>
-                แต่หากต้องการ Dashboard แบบ Real-time หรือป้องกันความผิดพลาดในการกรอก Data ระบบในการกรอก Data หรือทักษะการเขียนโค้ดก็จะเป็นสิ่งที่ควรนำมาใช้เพิ่มเติม
-            </p>
-
-            <h2>สรุป: Dashboard vs Report ต่างกันอย่างไร</h2>
-
-            <ul>
-                <li><strong>Dashboard</strong> — มีไว้ Monitor ตัวเลขสำคัญ เพื่อเห็นความผิดปกติได้ทันที</li>
-                <li><strong>Report</strong> — มีไว้ Analyze ข้อมูลเชิงลึก เพื่อหาสาเหตุและนำเสนอผู้บริหาร</li>
-            </ul>
-
-            <p>
-                Dashboard ไม่ได้ออกแบบมาเพื่อให้ดูเท่ แต่ออกแบบมาเพื่อให้เห็นปัญหาและแก้ไขได้ทันท่วงที
-            </p>
-
-            <p>
-                หากมีความคิดเห็นหรือมุมมองอื่นเกี่ยวกับเรื่องนี้ แชร์กันในคอมเมนต์ได้เลยครับ
-            </p>
-
-        </article>
-
-        <!-- Tags -->
-        <div class="mt-10 flex flex-wrap gap-2">
-            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">การทำ dashboard</span>
-            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Dashboard คืออะไร</span>
-            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Data Visualization</span>
-            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">KPI Monitoring</span>
-            <span class="bg-blue-50 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Looker Studio</span>
+        <div class="auth">
+          <span class="auth-name">napons.</span>
+          <span class="auth-role">Strategy Analyst · Author</span>
         </div>
+      </div>
+      <div class="byline-actions">
+        <button onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)">↗ Share</button>
+        <button onclick="window.print()">🖶 Print</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Back to blog -->
-        <div class="mt-12 pt-8 border-t border-gray-200">
-            <a href="blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-blue-700 transition">
-                <span class="material-icons-outlined text-sm">arrow_back</span>
-                กลับไปหน้าบทความทั้งหมด
-            </a>
+<!-- ARTICLE BODY -->
+<section class="art-body" data-screen-label="03 Article">
+
+  <!-- TOC at top -->
+  <aside class="art-toc">
+    <div class="toc-label">— Contents · 6 sections</div>
+    <ol>
+      <li class="active"><a href="#sec-1">Dashboard บูมขึ้นมาพร้อมกระแส Data</a></li>
+      <li><a href="#sec-2">หน้าที่แท้จริงของ Dashboard</a></li>
+      <li><a href="#sec-3">ความเข้าใจผิดที่พบบ่อย</a></li>
+      <li><a href="#sec-4">ตัวอย่างจริง — ยอดชานมตก</a></li>
+      <li><a href="#sec-5">เครื่องมือที่ใช้ทำ Dashboard</a></li>
+      <li><a href="#sec-6">สรุป Dashboard vs Report</a></li>
+    </ol>
+  </aside>
+
+  <!-- Prose -->
+  <article class="prose">
+    <p class="dropcap">
+      เมื่อไม่นานมานี้ได้ดูซีรีส์ <strong>สาธุ 2</strong> บน Netflix
+      แล้วเห็น Dashboard ที่ตัวเอกใช้ติดตามยอดบริจาควัดเป้าหมาย 1,000 ล้านบาท
+      ทั้งในช่วงที่ยอดยังไปไม่ถึงไหน และช่วงที่ใกล้จะถึงเป้า
+    </p>
+
+    <p>
+      Dashboard ตัวนั้นมีบทบาทสำคัญในการ Monitor ความคืบหน้า
+      ทำให้นึกถึงเรื่องที่หลายองค์กรยังเข้าใจผิดเกี่ยวกับหน้าที่ของ
+      <em>การทำ Dashboard</em> วันนี้เลยอยากมาแชร์ให้ชัดขึ้น
+    </p>
+
+    <h2 id="sec-1"><span class="hnum">01</span>Dashboard บูมขึ้นมาพร้อมกระแส Data</h2>
+
+    <p>
+      ในช่วง 2-3 ปีที่ผ่านมา กระแส Data บูมขึ้นอย่างเห็นได้ชัด
+      ทุกบริษัทอยากเก็บ Data และผู้บริหารมักต้องการเห็น
+      Dashboard เท่ๆ สักอันไว้ดูตัวเลข
+    </p>
+
+    <p>
+      แต่จากประสบการณ์จริง <strong>ผู้บริหารส่วนใหญ่ไม่ค่อยมีเวลาดู Dashboard</strong>
+      เหมือนกับในซีรีส์ที่ผู้บริหารมักติดประชุมจนพลาดตัวเลขสำคัญในบางครั้ง
+    </p>
+
+    <p>
+      คนที่ควรจะดู Dashboard จริงๆ คือ
+      <strong>Manager หรือหัวหน้าที่คอยบริหารตัวเลขสำคัญ</strong>
+      ในหน่วยงานนั้นๆ มากกว่า
+    </p>
+
+    <h2 id="sec-2"><span class="hnum">02</span>หน้าที่แท้จริงของ Dashboard คืออะไร</h2>
+
+    <p>
+      <strong>Dashboard มีหน้าที่หลักคือ Monitor KPI สำคัญ</strong>
+      ที่อาจส่งผลกับองค์กร เช่น ยอดขาย ค่าโฆษณา หรือ KPI ที่เกี่ยวข้องกับ
+      หน่วยงานนั้นๆ เพื่อให้เห็นว่ามีความผิดปกติเกิดขึ้นหรือไม่
+    </p>
+
+    <div class="compare">
+      <div class="left">
+        <h4>Dashboard</h4>
+        <p>Monitor ตัวเลขสำคัญ<br />เพื่อเห็น<em>ความผิดปกติ</em>ได้ทันที</p>
+      </div>
+      <div class="right">
+        <h4>Report</h4>
+        <p>Analyze ข้อมูลเชิงลึก<br />เพื่อหาสาเหตุและ<em>นำเสนอผู้บริหาร</em></p>
+      </div>
+    </div>
+
+    <ul>
+      <li>ถ้าพบความผิดปกติ — ลงไปแก้ไขปัญหาได้ทันที</li>
+      <li>ถ้ายอดสูงผิดปกติ — นำมาวิเคราะห์เป็น Report รายงานต่อผู้บริหาร</li>
+    </ul>
+
+    <h2 id="sec-3"><span class="hnum">03</span>ความเข้าใจผิดที่พบบ่อย: Dashboard ไม่ได้มีไว้ให้ดูเท่</h2>
+
+    <p>
+      หลายคนเข้าใจผิดจึงมักนำ Data เข้าไปยัดอยู่ในหน้าเดียว
+      ทำให้ดูมีตัวเลขเยอะ กราฟเยอะ ดูเท่
+      แต่กลับ<strong>ดูไม่รู้เรื่อง</strong>
+      คนเปิดมาดูก็ไม่เข้าใจว่าจะต้องดูตรงไหน
+    </p>
+
+    <div class="callout">
+      <div class="c-label">— Key Insight</div>
+      <p>
+        Dashboard ที่ดีควรมีเฉพาะ KPI ที่สำคัญ และกราฟที่มองเห็นสิ่งผิดปกติได้ทันที
+        เมื่อเจอค่าผิดปกติ ค่อยนำ Data ส่วนนั้นมาวิเคราะห์ให้ลึกและนำเสนอใน Report
+      </p>
+    </div>
+
+    <blockquote>
+      Dashboard ที่เต็มไปด้วยกราฟ แต่ไม่มีใครรู้ว่าต้องดูตรงไหน
+      ไม่ใช่ Dashboard — มันคือ Art Gallery
+      <cite>— From a Strategy Consulting session, 2025</cite>
+    </blockquote>
+
+    <h2 id="sec-4"><span class="hnum">04</span>ตัวอย่างจริง — ยอดชานมตกจาก 10,000 เหลือ 3,000 บาท</h2>
+
+    <p>
+      สมมติคุณทำธุรกิจเครื่องดื่มที่มีทั้งกาแฟ ชานม ชาเขียว น้ำหวาน
+      วันหนึ่งคุณนั่งดู Dashboard แล้วพบว่าสาขาหนึ่งปกติขายชานมได้
+      อาทิตย์ละ 10,000 บาท แต่อยู่ๆ ยอดตกเหลือแค่ 3,000 บาท
+    </p>
+
+    <p>
+      เมื่อดู Data แล้วพบว่าตกลงเฉพาะหมวดชานม แต่ยังไม่รู้สาเหตุ
+      คุณจึงขับรถไปที่สาขานั้นแล้วสอบถามพนักงาน
+      จึงพบว่า<strong>มีคู่แข่งใหม่เข้ามาในตลาด</strong>
+      เป็นร้านชานมที่อัดโปรโมชั่นเพื่อดึงลูกค้า
+    </p>
+
+    <p>
+      เมื่อพบสาเหตุ คุณจึงทำ Report แจ้งผู้บริหารและทำ Forecast
+      เพื่อออกโปรโมชั่นแก้สถานการณ์
+      นี่คือความแตกต่างของ <em>Dashboard (Monitor)</em> และ <em>Report (Analyze)</em>
+    </p>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=85&fm=jpg" alt="การวิเคราะห์ข้อมูลเพื่อตัดสินใจทางธุรกิจ" />
+      <figcaption>
+        <span class="cap-desc">Dashboard เห็นสัญญาณผิดปกติ — Report อธิบายว่าทำไม และควรทำอะไรต่อ</span>
+        <span>Fig. 01</span>
+      </figcaption>
+    </figure>
+
+    <h2 id="sec-5"><span class="hnum">05</span>เครื่องมือที่ใช้ทำ Dashboard ไม่จำเป็นต้องซับซ้อน</h2>
+
+    <p>
+      ในองค์กรที่ไม่ได้มี Database ขนาดใหญ่จนต้องใช้ SQL หรือ Python
+      คุณก็สามารถใช้เครื่องมืออย่าง <strong>Excel หรือ Looker Studio</strong>
+      ในการทำงานกับ Data ได้เลย
+    </p>
+
+    <p>
+      แต่หากต้องการ Dashboard แบบ Real-time หรือป้องกันความผิดพลาด
+      ในการกรอก Data ระบบในการกรอก Data หรือทักษะการเขียนโค้ด
+      ก็จะเป็นสิ่งที่ควรนำมาใช้เพิ่มเติม
+    </p>
+
+    <h2 id="sec-6"><span class="hnum">06</span>สรุป: Dashboard vs Report ต่างกันอย่างไร</h2>
+
+    <p>
+      สองสิ่งนี้ทำงานคนละบทบาท ใช้สลับกันไม่ได้:
+    </p>
+
+    <ul>
+      <li><strong>Dashboard</strong> — มีไว้ Monitor ตัวเลขสำคัญ เพื่อเห็นความผิดปกติได้ทันที</li>
+      <li><strong>Report</strong> — มีไว้ Analyze ข้อมูลเชิงลึก เพื่อหาสาเหตุและนำเสนอผู้บริหาร</li>
+    </ul>
+
+    <p>
+      Dashboard ไม่ได้ออกแบบมาเพื่อให้ดูเท่
+      แต่ออกแบบมาเพื่อให้เห็นปัญหาและแก้ไขได้ทันท่วงที
+    </p>
+
+    <p>
+      ถ้า Dashboard ของคุณตอบไม่ได้ว่า "มีอะไรผิดปกติหรือไม่วันนี้"
+      ภายใน 10 วินาที — นั่นไม่ใช่ Dashboard ที่ใช้งานได้จริง
+    </p>
+
+  </article>
+
+</section>
+
+<!-- AUTHOR BLOCK -->
+<div class="author-block">
+  <div class="a-img">
+    <img src="../portrait.png" alt="napons" />
+  </div>
+  <div>
+    <div class="a-label">— About the author</div>
+    <h4>napons.</h4>
+    <p>
+      Strategy Analyst + Data Analyst + Marketing Thinker —
+      ทำงานช่วย Founder ตัดสินใจทิศทางธุรกิจ
+      ผ่าน Data, Strategy และ Decision Frameworks
+      ตั้งอยู่ที่ Bangkok ทำงานกับลูกค้าทั่วเอเชียและยุโรป
+    </p>
+    <div class="a-links">
+      <a href="../contact.html">Book a Call →</a>
+      <a href="../articles.html">More articles →</a>
+      <a href="#">LinkedIn ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- END OF ARTICLE -->
+<div class="art-end">
+  <div class="art-end-rule">— · — · —</div>
+  <div class="art-end-cta">
+    <h3>อยากรู้ว่า Data ของคุณ<br /><em>บอกอะไร</em>จริงๆ?</h3>
+    <p>
+      เริ่มด้วย Strategy Call ฟรี 30 นาที — ผมจะช่วยดูว่า
+      Dashboard ของคุณ Monitor ถูกจุดหรือยัง
+    </p>
+    <a href="../contact.html" class="btn btn-primary">Book a Strategy Call <span class="arrow">→</span></a>
+  </div>
+</div>
+
+<!-- RELATED -->
+<section class="related" data-screen-label="04 Related">
+  <div class="wrap">
+    <div class="related-header">
+      <h2>บทความที่<em style="color: var(--accent); font-style: italic;">เกี่ยวข้อง</em></h2>
+      <a href="../articles.html" style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); text-decoration: none;">Browse all →</a>
+    </div>
+
+    <div class="related-grid">
+      <a href="#" class="related-card">
+        <div class="r-thumb">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=450&fit=crop&q=85&fm=jpg" alt="" loading="lazy" />
         </div>
-
-    </main>
-
-    <footer class="bg-gray-50 border-t border-gray-200 py-8 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex items-center space-x-2 text-sm text-gray-600">
-                <span class="font-semibold text-gray-900">© เว็บไซต์ของฉัน</span>
-                <span>•</span>
-                <span>สงวนลิขสิทธิ์</span>
-            </div>
+        <div class="r-body">
+          <span class="r-meta">Strategy</span>
+          <h4>Direction กับ Goal — ทำไม Founder สับสนสองคำนี้</h4>
+          <span class="r-read">8 min · 14 May 2026</span>
         </div>
-    </footer>
+      </a>
 
-    <script src="../js/navbar.js"></script>
+      <a href="#" class="related-card">
+        <div class="r-thumb">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=450&fit=crop&q=85&fm=jpg" alt="" loading="lazy" />
+        </div>
+        <div class="r-body">
+          <span class="r-meta">Business Direction</span>
+          <h4>Strategic Pause — ทำไมการหยุดคือกลยุทธ์</h4>
+          <span class="r-read">7 min · 09 Apr 2026</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot" data-screen-label="05 Footer">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 64px; padding-top: 16px;">
+      <div>
+        <a href="../index.html" class="brand" style="color: var(--inv-ink); font-size: 32px;">napons<span style="color: var(--accent);">.</span></a>
+        <p style="font-family: var(--display); font-size: 18px; color: var(--inv-ink-2); margin-top: 16px; max-width: 36ch; letter-spacing: -0.01em;">
+          Helping Founders make better business direction decisions.
+        </p>
+      </div>
+      <div>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--inv-muted); margin-bottom: 24px;">Navigate</div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-family: var(--display); font-size: 18px; letter-spacing: -0.01em;">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../articles.html">Articles</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--inv-muted); margin-bottom: 24px;">Elsewhere</div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-family: var(--display); font-size: 18px; letter-spacing: -0.01em;">
+          <li><a href="#">LinkedIn ↗</a></li>
+          <li><a href="#">Substack ↗</a></li>
+          <li><a href="mailto:hello@napons.com">hello@napons.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>napons. © 2026</span>
+      <span>Strategy Analyst · Business Direction</span>
+      <span>Bangkok · TH</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress
+  const progress = document.getElementById('progress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+    progress.style.width = (scrolled * 100) + '%';
+  });
+
+  // Active TOC item
+  const sections = document.querySelectorAll('.prose h2[id]');
+  const tocItems = document.querySelectorAll('.art-toc ol li');
+  window.addEventListener('scroll', () => {
+    let active = 0;
+    sections.forEach((sec, i) => {
+      if (sec.getBoundingClientRect().top < 150) active = i + 1;
+    });
+    tocItems.forEach((li, i) => {
+      li.classList.toggle('active', i === active);
+    });
+  });
+</script>
+
 </body>
 </html>

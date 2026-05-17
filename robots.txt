@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://naponsatha.github.io/np-web/sitemap.xml
+Sitemap: https://napons.com/sitemap.xml
